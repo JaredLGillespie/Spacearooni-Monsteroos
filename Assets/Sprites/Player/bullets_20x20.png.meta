@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a85f5c58c707eea489f30b1d066d04ec
-timeCreated: 1523068713
+guid: ee272da2834cd744d8802d81be3966ef
+timeCreated: 1523231516
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,8 @@ TextureImporter:
     21300002: bullets_20x20_1
     21300004: bullets_20x20_2
     21300006: bullets_20x20_3
+    21300008: bullets_20x20_4
+    21300010: bullets_20x20_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -69,6 +71,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -78,6 +81,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -86,7 +90,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 9
@@ -100,7 +104,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 9
@@ -114,7 +118,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 20
+        y: 60
         width: 20
         height: 20
       alignment: 9
@@ -128,11 +132,39 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 40
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.495, y: 0.52}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bullets_20x20_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.52, y: 0.57}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bullets_20x20_5
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 20
         height: 20
       alignment: 9
-      pivot: {x: 0.495, y: 0.5234}
+      pivot: {x: 0.5, y: 0.54}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Weapon_Machine
+  m_Controller: {fileID: 9100000, guid: 6c99342ecb7066d46907f221b0ec2907, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 011e5bb46fb47594394281789f530073, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: cc69e3c9006ff5048b4b24e8a7b1332d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: da7372e08b0b8ad409a12f1e7cecb936, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0c6f56ff7b7689c48960df39bd500efc, type: 2}
