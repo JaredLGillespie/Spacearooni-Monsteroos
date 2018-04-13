@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ee4b6083b6d0a5944919c2e5847ba9d1
-timeCreated: 1523233610
+guid: 83b4d1cc2d5bffa4892eae12b5147043
+timeCreated: 1523603761
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -18,6 +18,10 @@ TextureImporter:
     21300022: gun_impacts_32x32_11
     21300024: gun_impacts_32x32_12
     21300026: gun_impacts_32x32_13
+    21300028: gun_impacts_32x32_14
+    21300030: gun_impacts_32x32_15
+    21300032: gun_impacts_32x32_16
+    21300034: gun_impacts_32x32_17
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -199,8 +203,8 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,8 +217,8 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,8 +231,8 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,14 +245,56 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: gun_impacts_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gun_impacts_32x32_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gun_impacts_32x32_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: gun_impacts_32x32_14
       rect:
         serializedVersion: 2
         x: 0
@@ -262,7 +308,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gun_impacts_32x32_12
+      name: gun_impacts_32x32_15
       rect:
         serializedVersion: 2
         x: 32
@@ -276,7 +322,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: gun_impacts_32x32_13
+      name: gun_impacts_32x32_16
       rect:
         serializedVersion: 2
         x: 64

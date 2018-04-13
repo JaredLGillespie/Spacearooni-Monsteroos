@@ -6,8 +6,7 @@ using UnityEngine;
 public class BeamToPoint : MonoBehaviour
 {
     private LineRenderer lineRenderer;
-    private Vector3 targetPosition;
-    private float distanceMultiplier = 1.0f; // Set to 1.0f to hit point, or > 1 to go through point
+    private float distance = 0.0f; // Distance to point
 
     private void Awake()
     {
@@ -16,12 +15,11 @@ public class BeamToPoint : MonoBehaviour
 
     private void Update()
     {
-        lineRenderer.SetPosition(1, Vector2.right * Vector2.Distance(targetPosition, this.transform.position) * distanceMultiplier);
+        lineRenderer.SetPosition(1, Vector2.right * distance);
     }
 
-    public void SetTargetPosition(Vector3 position, float distance = 1.0f)
+    public void SetTargetPosition(float distance)
     {
-        this.targetPosition = position;
-        this.distanceMultiplier = distance;
+        this.distance = distance;
     }
 }

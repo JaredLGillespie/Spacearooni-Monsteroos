@@ -17,19 +17,31 @@ public class BeamCast : MonoBehaviour
     {
         this.beamToPoint = GetComponent<BeamToPoint>();
         impactCreator = GetComponent<ImpactCreator>();
+
+        // Reset localscale if changed due to parent
+        var scale = this.transform.localScale;
+        if (scale.x < 0)
+            scale.x = -scale.x;
+
+        this.transform.localScale = scale;
     }
 
     private void Update()
     {
-        var mouse = Camera.main.WorldToScreenPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, mouse, Mathf.Infinity, HitMask);
+        var mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var direction = (mouse - this.transform.position).normalized;
+        var distance = (mouse - this.transform.position).magnitude;
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, distance, HitMask);
 
         if (hit == null || !hit)
-            beamToPoint.SetTargetPosition(mouse);
+        {
+            beamToPoint.SetTargetPosition(Screen.width);
+        }
         else
         {
-            beamToPoint.SetTargetPosition(hit.transform.position);
-
+            
+            beamToPoint.SetTargetPosition(Vector2.Distance(hit.point, this.transform.position));
+            
             if (!collided)
             {
                 collided = true;
@@ -39,7 +51,7 @@ public class BeamCast : MonoBehaviour
                 if (go.tag.Equals(EnemyTag))
                     go.GetComponent<DamageEnemy>().InflictDamage(Damage);
 
-                StartCoroutine(DoImpact(hit.transform.position));
+                StartCoroutine(DoImpact(hit.point));
             }
         }
     }
