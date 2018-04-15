@@ -10,6 +10,7 @@ public class PlayerJetpack : MonoBehaviour
     [SerializeField] private float ThrustForce = 200.0f; // The thrusting force of the jetpack
     [SerializeField] private string GroundTag = "Ground"; // Using tag to determine ground objects
     [SerializeField] private float GroundProximity = 0.1f; // Proximity to ground to consider colliding
+    [SerializeField] private bool UseWhenGrounded = true; // Whether can use when grounded
 
     private Animator animator;
     private new Rigidbody2D rigidbody2D;
@@ -27,14 +28,14 @@ public class PlayerJetpack : MonoBehaviour
         // Check if we're colliding with ground
         grounded = IsGrounded();
 
-        if (!grounded)
+        if (!grounded || UseWhenGrounded)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 canFly = true;
                 animator.SetBool("Jetpacking", true);
             }
-            else if (Input.GetKey(KeyCode.Space) && canFly) {
+            else if (Input.GetKey(KeyCode.Space) && (canFly || UseWhenGrounded)) {
                 rigidbody2D.velocity += (Vector2)this.gameObject.transform.up * ThrustForce * Time.deltaTime;
 
                 animator.SetBool("Jetpacking", true);

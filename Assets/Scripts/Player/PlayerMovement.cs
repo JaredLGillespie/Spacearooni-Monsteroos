@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool AirControl = true; // Whether the player can steer while jumping
     [SerializeField] private string GroundTag = "Ground"; // Using tag to determine ground objects
     [SerializeField] private float GroundProximity = 0.1f; // Proximity to ground to consider colliding
+    [SerializeField] private bool EnableJump = false; // Whether player can jump
 
     private Animator animator;
     private new Rigidbody2D rigidbody2D;
@@ -58,18 +59,21 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("Walking", false);
             }
         }
-        
-        if (Input.GetKey(KeyCode.Space)) // Jump
+
+        if (EnableJump)
         {
-            if (grounded && canJump)
+            if (Input.GetKey(KeyCode.Space)) // Jump
             {
-                rigidbody2D.velocity += (Vector2)this.gameObject.transform.up * JumpForce * Time.deltaTime;
-                canJump = false;
+                if (grounded && canJump)
+                {
+                    rigidbody2D.velocity += (Vector2)this.gameObject.transform.up * JumpForce * Time.deltaTime;
+                    canJump = false;
+                }
             }
-        }
-        else if (grounded)
-        {
-            canJump = true;
+            else if (grounded)
+            {
+                canJump = true;
+            }
         }
     }
 
