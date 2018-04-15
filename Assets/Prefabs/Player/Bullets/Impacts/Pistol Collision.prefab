@@ -9,32 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1896794294296662}
+  m_RootGameObject: {fileID: 1338794028982822}
   m_IsPrefabParent: 1
---- !u!1 &1896794294296662
+--- !u!1 &1338794028982822
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4711214762036166}
-  - component: {fileID: 212786116302841014}
-  - component: {fileID: 95042477519686042}
-  - component: {fileID: 114929834478588260}
+  - component: {fileID: 4530379130474212}
+  - component: {fileID: 212210363025497324}
+  - component: {fileID: 95264400392828592}
+  - component: {fileID: 114189682314368796}
   m_Layer: 2
-  m_Name: Rocket Collision
+  m_Name: Pistol Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4711214762036166
+--- !u!4 &4530379130474212
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896794294296662}
+  m_GameObject: {fileID: 1338794028982822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1259936, y: 0.77461797, z: -0.0048819017}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42,16 +42,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95042477519686042
+--- !u!95 &95264400392828592
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896794294296662}
+  m_GameObject: {fileID: 1338794028982822}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 62a08f5e9e2fea84ea40cb2e36a4115a, type: 2}
+  m_Controller: {fileID: 22100000, guid: 9f6fd217325585d468d1240f1c558fd0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -59,24 +59,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114929834478588260
+--- !u!114 &114189682314368796
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896794294296662}
+  m_GameObject: {fileID: 1338794028982822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43a2ad502a77dbb48b0e41f324e37e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationName: Done
---- !u!212 &212786116302841014
+--- !u!212 &212210363025497324
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896794294296662}
+  m_GameObject: {fileID: 1338794028982822}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4b6083b6d0a5944919c2e5847ba9d1, type: 3}
+  m_Sprite: {fileID: 21300022, guid: ee4b6083b6d0a5944919c2e5847ba9d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,5 +113,5 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

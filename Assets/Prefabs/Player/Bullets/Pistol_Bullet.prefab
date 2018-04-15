@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114715842096615890}
   - component: {fileID: 61771485096571952}
   - component: {fileID: 114448355623514936}
-  - component: {fileID: 114422716937003088}
   m_Layer: 2
   m_Name: Pistol_Bullet
   m_TagString: Untagged
@@ -104,22 +103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 2
   Direction: right
---- !u!114 &114422716937003088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1920111427724892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f56a020807d0da4aa957419311ac882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpactObject: {fileID: 1338794028982822, guid: a45f87de444be044c90ad7cdb7703600,
-    type: 2}
-  NumberOfImpactObjects: 1
-  ImpactObjectSpread: 0
-  DelayBetweenImpact: 0
 --- !u!114 &114448355623514936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,8 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb13355537ab50843b91e62226dde310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyTag: Enemy
+  DamageTag: Enemy
   Damage: 1
+  CollisionCreator: {fileID: 1568119745628184, guid: afbb111133c84cb4f866f9d4a4b2518f,
+    type: 2}
 --- !u!114 &114715842096615890
 MonoBehaviour:
   m_ObjectHideFlags: 1

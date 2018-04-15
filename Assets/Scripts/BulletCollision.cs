@@ -9,8 +9,9 @@ public class BulletCollision : MonoBehaviour
     [System.Serializable]
     private class EnemyHitEvent : UnityEvent<float> { }
 
-    [SerializeField] private string EnemyTag = "Enemy"; // Enemy tag
+    [SerializeField] private string DamageTag = "Enemy"; // Object to damage tag
     [SerializeField] private float Damage; // Amount of damage to do if hit enemy
+    [SerializeField] private GameObject CollisionCreator; // Collision creator object
 
     private new Collider2D collider2D;
     private ImpactCreator impactCreator;
@@ -30,18 +31,20 @@ public class BulletCollision : MonoBehaviour
 
             var go = collision.otherCollider.gameObject;
 
-            if (go.tag.Equals(EnemyTag))
-                go.GetComponent<DamageEnemy>().InflictDamage(Damage);
+            if (go.tag.Equals(DamageTag))
+            {
+                // Why is this not C#7 ?????????
+                var comp = go.GetComponent<DamageObject>();
+                if (comp != null)
+                    comp.InflictDamage(Damage);
+            }
 
-            StartCoroutine("DoImpact");
+            if (CollisionCreator != null)
+            {
+                Instantiate(CollisionCreator, this.transform.position, this.transform.rotation);
+            }
+
+            Destroy(this.gameObject);
         }
-    }
-
-    private IEnumerator DoImpact()
-    {
-        if (impactCreator != null)
-            yield return impactCreator.CreateImpact();
-
-        Destroy(this.gameObject);
     }
 }

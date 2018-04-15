@@ -8,6 +8,14 @@ public class ImpactCreator : MonoBehaviour
     [SerializeField] private int NumberOfImpactObjects = 1; // Number of impact objects to create
     [SerializeField] private float ImpactObjectSpread = 0.0f; // Spread of impact objects (objects created within this radius of collision)
     [SerializeField] private float DelayBetweenImpact = 0.0f; // Delay between impact object creations
+    [SerializeField] private bool StartImmediately = true; // Whether to start immediately
+    [SerializeField] private bool DestroyWhenComplete = true; // Whether to destroy this when done
+
+    private void Start()
+    {
+        if (StartImmediately)
+           StartCoroutine("CreateImpact");
+    }
 
     public IEnumerator CreateImpact()
     {
@@ -36,5 +44,8 @@ public class ImpactCreator : MonoBehaviour
 
             yield return new WaitForSeconds(DelayBetweenImpact);
         }
+
+        if (DestroyWhenComplete)
+            Destroy(this.gameObject);
     }
 }

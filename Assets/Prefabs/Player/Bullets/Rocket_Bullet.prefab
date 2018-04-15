@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 61042428838876564}
   - component: {fileID: 114661300311167624}
   - component: {fileID: 114457154111252620}
-  - component: {fileID: 114308329762852750}
+  - component: {fileID: 114632912091446658}
   m_Layer: 2
   m_Name: Rocket_Bullet
   m_TagString: Untagged
@@ -110,22 +110,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114308329762852750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482480503607222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f56a020807d0da4aa957419311ac882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpactObject: {fileID: 1896794294296662, guid: 3a15139d09296c64cb3e70cd65e9b314,
-    type: 2}
-  NumberOfImpactObjects: 3
-  ImpactObjectSpread: 0.1
-  DelayBetweenImpact: 0.1
 --- !u!114 &114457154111252620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTag: Enemy
   Damage: 10
+  CollisionCreator: {fileID: 1041269292347558, guid: 8d559bd3a49230c47a695ed169dbf2a2,
+    type: 2}
 --- !u!114 &114537108523849314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,6 +150,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 2
   Direction: right
+--- !u!114 &114632912091446658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482480503607222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7840de535ebd8d6438a2b5815d160445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ParticleObject: {fileID: 1571093482619088, guid: cc5b22dc78599f34bb47d2de4fc9c906,
+    type: 2}
+  ParticleSpread: 0.04
+  ParticleSetCount: 2
+  DelayBetweenCreations: 0.05
+  Run: 1
+  RandomizeRotation: 1
 --- !u!114 &114661300311167624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTag: Enemy
   Damage: 10
+  CollisionCreator: {fileID: 0}
 --- !u!212 &212701014307746140
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114715842096615890}
   - component: {fileID: 61655386577884296}
   - component: {fileID: 114531373602673496}
-  - component: {fileID: 114923843311075044}
   m_Layer: 2
   m_Name: Machine_Bullet
   m_TagString: Untagged
@@ -117,6 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyTag: Enemy
   Damage: 1
+  CollisionCreator: {fileID: 1164248569951320, guid: f2debb4dfbcb8604a9b8e45870f6236a,
+    type: 2}
 --- !u!114 &114715842096615890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,22 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyInterval: 5
---- !u!114 &114923843311075044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1920111427724892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f56a020807d0da4aa957419311ac882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpactObject: {fileID: 1874989327746106, guid: 2ca618740f9e19f43a46e674c23568cc,
-    type: 2}
-  NumberOfImpactObjects: 1
-  ImpactObjectSpread: 0
-  DelayBetweenImpact: 0
 --- !u!212 &212285761824781666
 SpriteRenderer:
   m_ObjectHideFlags: 1

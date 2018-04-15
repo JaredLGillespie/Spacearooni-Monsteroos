@@ -49,7 +49,7 @@ public class BeamCast : MonoBehaviour
                 var go = hit.transform.gameObject;
 
                 if (go.tag.Equals(EnemyTag))
-                    go.GetComponent<DamageEnemy>().InflictDamage(Damage);
+                    go.GetComponent<DamageObject>().InflictDamage(Damage);
 
                 StartCoroutine(DoImpact(hit.point));
             }
