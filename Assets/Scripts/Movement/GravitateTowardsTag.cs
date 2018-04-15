@@ -27,6 +27,10 @@ public class GravitateTowardsTag : MonoBehaviour
     [SerializeField] private float DelayBetweenSwitch = 1.0f; // Delay between switching targets
     [SerializeField] private float MinimumSwitchProximity = 10.0f; // Must be this close to object to switch gravitate towards from different object
     [SerializeField] private float MinimumGravitateDistance = Mathf.Infinity; // Must be this cloest to object to gravitate towards
+    [SerializeField] private bool RotateTowards = true; // Whether to rotate towards the object
+    [SerializeField] private bool AlwaysSnapRotation = false; // Whether to always snap rotate towards the object
+    [SerializeField] private float RotateSpeed = 3.0f; // The rotation speed (only used if SnapRotation = false)
+    [SerializeField] private float DistanceToSnapRotate = 0.0f; // The minimum distance from the object to enable snap rotation (useful when very close)
 
     private new Collider2D collider2D;
     private new Rigidbody2D rigidbody2D;
@@ -54,7 +58,8 @@ public class GravitateTowardsTag : MonoBehaviour
                 if (closest.Item3 <= MinimumGravitateDistance)
                 {
                     // Rotate towards the object
-                    FaceObject(closest.Item2);
+                    if (RotateTowards)
+                        FaceObject(closest.Item2, closest.Item3);
 
                     // Gravitate towards the object
                     rigidbody2D.AddRelativeForce(Vector3.down * Gravity, ForceMode2D.Force);
@@ -72,7 +77,8 @@ public class GravitateTowardsTag : MonoBehaviour
                     if (closest.Item3 <= MinimumGravitateDistance)
                     {
                         // Rotate towards the object
-                        FaceObject(closest.Item2);
+                        if (RotateTowards)
+                            FaceObject(closest.Item2, closest.Item3);
 
                         // Gravitate towards the object
                         rigidbody2D.AddRelativeForce(Vector3.down * Gravity, ForceMode2D.Force);
@@ -91,7 +97,8 @@ public class GravitateTowardsTag : MonoBehaviour
                             rotationPoint = previousTarget.transform.position;
 
                         // Rotate towards the object
-                        FaceObject(rotationPoint);
+                        if (RotateTowards)
+                            FaceObject(rotationPoint, closest.Item3);
 
                         // Gravitate towards the object
                         rigidbody2D.AddRelativeForce(Vector3.down * Gravity, ForceMode2D.Force);
@@ -128,11 +135,17 @@ public class GravitateTowardsTag : MonoBehaviour
         return new Tuple<GameObject, Vector2, float>(closestObject, rotationPoint, closestDistance);
     }
 
-    private void FaceObject(Vector2 targetPosition)
+    private void FaceObject(Vector2 targetPosition, float distance)
     {
         Vector2 direction = targetPosition - (Vector2)this.transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90;
-        transform.rotation =  Quaternion.AngleAxis(angle, Vector3.forward);
+
+        var target = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        if (AlwaysSnapRotation || distance <= DistanceToSnapRotate)
+            this.transform.rotation = target;
+        else
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, target, RotateSpeed * Time.deltaTime);
     }
 
     private IEnumerator EnableSwitch()

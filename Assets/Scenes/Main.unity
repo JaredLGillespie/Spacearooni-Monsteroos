@@ -921,6 +921,10 @@ MonoBehaviour:
   DelayBetweenSwitch: 0.5
   MinimumSwitchProximity: 10
   MinimumGravitateDistance: Infinity
+  RotateTowards: 1
+  AlwaysSnapRotation: 0
+  RotateSpeed: 5
+  DistanceToSnapRotate: 0.05
 --- !u!50 &1457214242
 Rigidbody2D:
   serializedVersion: 4
