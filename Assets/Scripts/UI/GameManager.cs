@@ -26,5 +26,12 @@ public class GameManager : MonoBehaviour {
 
     public void ShowInGameMenu() {
         inGameMenu.SetActive(!inGameMenu.activeSelf);
+        if (!inGameMenu.activeSelf)
+        {
+            Time.timeScale = 1;
+        }
+        else {
+            Time.timeScale = 0;
+        }
     }
 }
