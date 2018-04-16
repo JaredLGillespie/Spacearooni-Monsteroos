@@ -5,15 +5,15 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject inGameMenu;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start() {
+
+    }
+
+    // Update is called once per frame
+    void Update() {
         HandleEsc();
-	}
+    }
 
     public void HandleEsc()
     {
@@ -33,5 +33,13 @@ public class GameManager : MonoBehaviour {
         else {
             Time.timeScale = 0;
         }
+    }
+
+    public void RestartGame() {
+
+    }
+    public void QuitGame()
+    {
+
     }
 }
