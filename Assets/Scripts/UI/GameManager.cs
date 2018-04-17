@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("test");
             ShowInGameMenu();
         }
     }
@@ -40,6 +39,7 @@ public class GameManager : MonoBehaviour {
     }
     public void QuitGame()
     {
-        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+        //   Application.Quit();
     }
 }
