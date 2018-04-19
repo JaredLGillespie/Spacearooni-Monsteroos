@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BeamToPoint))]
-public class BeamCast : MonoBehaviour
+public class BeamCastToMouse : MonoBehaviour
 {
     [SerializeField] private LayerMask HitMask; // What to collide with
     [SerializeField] private string EnemyTag = "Enemy"; // Enemy tag
