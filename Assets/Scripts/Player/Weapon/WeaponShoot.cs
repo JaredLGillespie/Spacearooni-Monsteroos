@@ -19,6 +19,7 @@ public class WeaponShoot : MonoBehaviour
         public float RateOfFire = 0.0f; // Rate of fire (if automatic)
         public Vector2 BulletPositionOffset = Vector2.zero; // Set to end of gun muzzle
         public GameObject BulletObject; // Bullet object
+        public AudioClip shoot;
     }
 
     [SerializeField] private WeaponInfo[] WeaponInfos;
@@ -118,6 +119,7 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
+        GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
         if (numberOfBullets > 0)
             numberOfBullets--;
 
