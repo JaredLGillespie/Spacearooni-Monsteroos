@@ -86,9 +86,12 @@ public class WeaponShoot : MonoBehaviour
                 {
                     if (disableHoldCoroutine == null)
                     {
+                        AudioSource loopSound = gameObject.AddComponent<AudioSource>();
+                        loopSound.clip = currentWeapon.shoot;
+                        loopSound.loop = true;
                         disableHoldCoroutine = DisableHold();
                         StartCoroutine(disableHoldCoroutine);
-                        HoldWeapon();
+                        HoldWeapon(loopSound);
                     }
                 }
             }
@@ -155,8 +158,9 @@ public class WeaponShoot : MonoBehaviour
         Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), this.transform.parent.gameObject.GetComponent<Collider2D>());
     }
 
-    private void HoldWeapon()
+    private void HoldWeapon(AudioSource loopSound)
     {
+        loopSound.Play();
         animator.SetBool("Shoot", true);
         lastHeldTime = Time.fixedTime;
 
@@ -226,7 +230,7 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator DisableHold()
     {
         yield return new WaitForSeconds(holdTime);
-
+        Debug.Log("disableHold");
         animator.SetBool("Shoot", false);
         holdTime = 0.0f;
         UseDefaultWeapon.Invoke();
