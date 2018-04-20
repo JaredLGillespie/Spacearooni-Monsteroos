@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject inGameMenu;
+    [SerializeField]
+    public AudioClip music;
     // Use this for initialization
     void Start() {
-
+        
     }
 
     // Update is called once per frame
