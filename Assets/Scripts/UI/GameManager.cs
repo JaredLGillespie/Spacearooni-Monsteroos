@@ -12,7 +12,10 @@ public class GameManager : MonoBehaviour {
     public float laserTime = 0.0f;
     [SerializeField]
     private Text laserTimer;
-
+    [SerializeField] public GameObject pistol;
+    [SerializeField] public GameObject laser;
+    [SerializeField] public GameObject machine;
+    [SerializeField] public GameObject rocket;
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";

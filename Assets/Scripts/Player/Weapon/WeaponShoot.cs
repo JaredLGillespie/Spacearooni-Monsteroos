@@ -43,6 +43,18 @@ public class WeaponShoot : MonoBehaviour
 
     private void Update()
     {
+        gameManager.pistol.SetActive(false);
+        gameManager.laser.SetActive(false);
+        gameManager.machine.SetActive(false);
+        gameManager.rocket.SetActive(false);
+        if (currentWeapon.Name == "pistol")
+            gameManager.pistol.SetActive(true);
+        if (currentWeapon.Name == "laser")
+            gameManager.laser.SetActive(true);
+        if (currentWeapon.Name == "machine")
+            gameManager.machine.SetActive(true);
+        if (currentWeapon.Name == "rocket")
+            gameManager.rocket.SetActive(true);
         gameManager.bulletCount = numberOfBullets;
         gameManager.laserTime = holdTime;
         if (currentWeapon == null) return;
