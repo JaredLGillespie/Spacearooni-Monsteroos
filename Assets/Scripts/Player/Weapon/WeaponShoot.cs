@@ -44,6 +44,7 @@ public class WeaponShoot : MonoBehaviour
     private void Update()
     {
         gameManager.bulletCount = numberOfBullets;
+        gameManager.laserTime = holdTime;
         if (currentWeapon == null) return;
 
         if (currentWeapon.IsAutomatic)
@@ -107,7 +108,7 @@ public class WeaponShoot : MonoBehaviour
                         disableHoldCoroutine = null;
 
                         holdTime -= (Time.fixedTime - lastHeldTime);
-
+                        gameManager.laserTime = holdTime;
                         if (heldObject != null)
                             Destroy(heldObject);
 

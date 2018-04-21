@@ -9,16 +9,21 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private Text ammoLabel;
     public int bulletCount=0;
+    public float laserTime = 0.0f;
+    [SerializeField]
+    private Text laserTimer;
 
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";
+        laserTimer.text = "";
     }
 
     // Update is called once per frame
     void Update() {
         HandleEsc();
         ammoLabel.text = "ammo: " + bulletCount;
+        laserTimer.text = "TIMER: " + laserTime;
     }
 
     public void HandleEsc()
