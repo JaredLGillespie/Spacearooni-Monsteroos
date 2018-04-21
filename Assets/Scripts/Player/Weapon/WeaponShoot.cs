@@ -24,7 +24,7 @@ public class WeaponShoot : MonoBehaviour
 
     [SerializeField] private WeaponInfo[] WeaponInfos;
     [SerializeField] private UnityEvent UseDefaultWeapon;
-
+    [SerializeField] public GameManager gameManager;
     private Animator animator;
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
@@ -43,6 +43,7 @@ public class WeaponShoot : MonoBehaviour
 
     private void Update()
     {
+        gameManager.bulletCount = numberOfBullets;
         if (currentWeapon == null) return;
 
         if (currentWeapon.IsAutomatic)

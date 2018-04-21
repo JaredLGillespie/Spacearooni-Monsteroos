@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     [SerializeField]
     private GameObject inGameMenu;
     [SerializeField]
-    public AudioClip music;
+    private Text ammoLabel;
+    public int bulletCount=0;
+
     // Use this for initialization
     void Start() {
-        
+        ammoLabel.text = "";
     }
 
     // Update is called once per frame
     void Update() {
         HandleEsc();
+        ammoLabel.text = "ammo: " + bulletCount;
     }
 
     public void HandleEsc()
