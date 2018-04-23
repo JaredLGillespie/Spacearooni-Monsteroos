@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 10f047ceeb56ef2499a9c50e3772e567
 folderAsset: yes
 timeCreated: 1524505270
+=======
+guid: 86325154b00fbde49bdcfcac3c39b705
+folderAsset: yes
+timeCreated: 1523275256
+>>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
