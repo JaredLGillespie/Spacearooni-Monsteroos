@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 95055434054853218}
   - component: {fileID: 114933461191606508}
   - component: {fileID: 114438643670267892}
-  - component: {fileID: 114859085814222330}
   m_Layer: 0
   m_Name: Spinning Disk
   m_TagString: Untagged
@@ -114,19 +113,6 @@ MonoBehaviour:
   MaxSpeed: 2
   UseSpeedDiff: 0
   BreakSpeed: 1
---- !u!114 &114859085814222330
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534651679850208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcbf49331c4aa8b4597f5b573285c866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 3
-  Direction: right
 --- !u!114 &114891068519780456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,7 +148,6 @@ MonoBehaviour:
   GroundTag: Ground
   GroundProximity: 0.03
   Direction: right
-  OnlyWhenGrounded: 1
 --- !u!212 &212416178454165060
 SpriteRenderer:
   m_ObjectHideFlags: 1

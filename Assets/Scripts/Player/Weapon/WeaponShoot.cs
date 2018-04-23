@@ -5,7 +5,6 @@ using UnityEngine.Events;
 using System.Linq;
 using System;
 
-[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Animator))]
 public class WeaponShoot : MonoBehaviour
 {
@@ -27,7 +26,6 @@ public class WeaponShoot : MonoBehaviour
     [SerializeField] private UnityEvent UseDefaultWeapon;
 
     private Animator animator;
-    private AudioSource audioSource;
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
     private int numberOfBullets = -1;
@@ -40,12 +38,15 @@ public class WeaponShoot : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+<<<<<<< HEAD
         audioSource = GetComponent<AudioSource>();
 <<<<<<< HEAD
         loopSound = gameObject.AddComponent<AudioSource>();
         shooting = gameObject.AddComponent<AudioSource>();
 =======
 >>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
+=======
+>>>>>>> parent of 7077d92... Checkin in current alien changes
     }
 
     private void Update()
@@ -127,12 +128,16 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
+<<<<<<< HEAD
         audioSource.PlayOneShot(currentWeapon.shoot);
 <<<<<<< HEAD
         //  GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
         shooting.Play();
 =======
 >>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
+=======
+        GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
+>>>>>>> parent of 7077d92... Checkin in current alien changes
         if (numberOfBullets > 0)
             numberOfBullets--;
 
