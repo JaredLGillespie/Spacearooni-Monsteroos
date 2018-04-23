@@ -25,7 +25,8 @@ public class WeaponShoot : MonoBehaviour
 
     [SerializeField] private WeaponInfo[] WeaponInfos;
     [SerializeField] private UnityEvent UseDefaultWeapon;
-
+    [SerializeField] public GameManager gameManager;
+    [SerializeField] public MusicPlayer musicPlayer;
     private Animator animator;
     private AudioSource audioSource;
     private WeaponInfo currentWeapon;
@@ -36,22 +37,37 @@ public class WeaponShoot : MonoBehaviour
     private GameObject heldObject;
     private IEnumerator enableShootCoroutine;
     private IEnumerator disableHoldCoroutine;
-
+    private AudioSource loopSound;
+    private AudioSource shooting;
     private void Awake()
     {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-<<<<<<< HEAD
         loopSound = gameObject.AddComponent<AudioSource>();
         shooting = gameObject.AddComponent<AudioSource>();
-=======
->>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
     }
 
     private void Update()
     {
+        if (gameManager.optionsMenu.activeSelf || gameManager.inGameMenu.activeSelf) {
+            return;
+        }
+        gameManager.pistol.SetActive(false);
+        gameManager.laser.SetActive(false);
+        gameManager.machine.SetActive(false);
+        gameManager.rocket.SetActive(false);
+        if (currentWeapon.Name == "pistol")
+            gameManager.pistol.SetActive(true);
+        if (currentWeapon.Name == "laser")
+            gameManager.laser.SetActive(true);
+        if (currentWeapon.Name == "machine")
+            gameManager.machine.SetActive(true);
+        if (currentWeapon.Name == "rocket")
+            gameManager.rocket.SetActive(true);
+        gameManager.bulletCount = numberOfBullets;
+        gameManager.laserTime = holdTime;
         if (currentWeapon == null) return;
-        
+
         if (currentWeapon.IsAutomatic)
         {
             // Hold mouse button to shoot
@@ -59,6 +75,7 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot)
                 {
+                    shooting.clip = currentWeapon.shoot;
                     ShootWeapon();
 
                     if (numberOfBullets > 0)
@@ -79,6 +96,7 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot)
                 {
+                    shooting.clip = currentWeapon.shoot;
                     ShootWeapon();
 
                     if (numberOfBullets == 0)
@@ -94,6 +112,8 @@ public class WeaponShoot : MonoBehaviour
                 {
                     if (disableHoldCoroutine == null)
                     {
+                        loopSound.clip = currentWeapon.shoot;
+                        loopSound.loop = true;
                         disableHoldCoroutine = DisableHold();
                         StartCoroutine(disableHoldCoroutine);
                         HoldWeapon();
@@ -106,11 +126,12 @@ public class WeaponShoot : MonoBehaviour
                 {
                     if (disableHoldCoroutine != null)
                     {
+                        loopSound.Stop();
                         StopCoroutine(disableHoldCoroutine);
                         disableHoldCoroutine = null;
 
                         holdTime -= (Time.fixedTime - lastHeldTime);
-
+                        gameManager.laserTime = holdTime;
                         if (heldObject != null)
                             Destroy(heldObject);
 
@@ -128,11 +149,8 @@ public class WeaponShoot : MonoBehaviour
     private void ShootWeapon()
     {
         audioSource.PlayOneShot(currentWeapon.shoot);
-<<<<<<< HEAD
         //  GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
         shooting.Play();
-=======
->>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
         if (numberOfBullets > 0)
             numberOfBullets--;
 
@@ -170,6 +188,7 @@ public class WeaponShoot : MonoBehaviour
 
     private void HoldWeapon()
     {
+        loopSound.Play();
         animator.SetBool("Shoot", true);
         lastHeldTime = Time.fixedTime;
 
@@ -239,9 +258,14 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator DisableHold()
     {
         yield return new WaitForSeconds(holdTime);
-
+        Debug.Log("disableHold");
         animator.SetBool("Shoot", false);
         holdTime = 0.0f;
         UseDefaultWeapon.Invoke();
     }
+
+    public void updateSFX() {
+        loopSound.volume = musicPlayer.sfxSlider.value;
+        shooting.volume = musicPlayer.sfxSlider.value;
+    } 
 }
