@@ -40,17 +40,8 @@ public class WeaponShoot : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-<<<<<<< HEAD
-        audioSource = GetComponent<AudioSource>();
         loopSound = gameObject.AddComponent<AudioSource>();
         shooting = gameObject.AddComponent<AudioSource>();
-<<<<<<< HEAD
-=======
->>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
-=======
->>>>>>> parent of 7077d92... Checkin in current alien changes
-=======
->>>>>>> parent of 0fd111d... Revert "Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos"
     }
 
     private void Update()
@@ -154,18 +145,8 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
-<<<<<<< HEAD
-        audioSource.PlayOneShot(currentWeapon.shoot);
         //  GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
         shooting.Play();
-<<<<<<< HEAD
-=======
->>>>>>> parent of 1c8bc53... Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos
-=======
-        GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
->>>>>>> parent of 7077d92... Checkin in current alien changes
-=======
->>>>>>> parent of 0fd111d... Revert "Merge branch 'master' of https://github.com/JaredLGillespie/Spacearooni-Monsteroos"
         if (numberOfBullets > 0)
             numberOfBullets--;
 
