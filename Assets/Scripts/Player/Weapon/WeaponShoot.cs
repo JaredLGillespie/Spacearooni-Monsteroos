@@ -42,12 +42,9 @@ public class WeaponShoot : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-<<<<<<< HEAD
         audioSource = GetComponent<AudioSource>();
-=======
         loopSound = gameObject.AddComponent<AudioSource>();
         shooting = gameObject.AddComponent<AudioSource>();
->>>>>>> 439056f9b12fb8d58d29b8074964cb704e978b75
     }
 
     private void Update()
@@ -151,12 +148,9 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
-<<<<<<< HEAD
         audioSource.PlayOneShot(currentWeapon.shoot);
-=======
         //  GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
         shooting.Play();
->>>>>>> 439056f9b12fb8d58d29b8074964cb704e978b75
         if (numberOfBullets > 0)
             numberOfBullets--;
 
