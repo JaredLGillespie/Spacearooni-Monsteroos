@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using System.Linq;
 using System;
 
+[RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(Animator))]
 public class WeaponShoot : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class WeaponShoot : MonoBehaviour
     [SerializeField] private UnityEvent UseDefaultWeapon;
 
     private Animator animator;
+    private AudioSource audioSource;
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
     private int numberOfBullets = -1;
@@ -38,6 +40,7 @@ public class WeaponShoot : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -119,7 +122,7 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
-        GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
+        audioSource.PlayOneShot(currentWeapon.shoot);
         if (numberOfBullets > 0)
             numberOfBullets--;
 
