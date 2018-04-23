@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     [SerializeField]
-    private GameObject inGameMenu;
+    public GameObject inGameMenu;
+    [SerializeField]
+    public GameObject optionsMenu;
     [SerializeField]
     private Text ammoLabel;
     public int bulletCount=0;
@@ -38,14 +40,33 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ShowInGameMenu() {
-        inGameMenu.SetActive(!inGameMenu.activeSelf);
-        if (!inGameMenu.activeSelf)
+        if (optionsMenu.activeSelf)
         {
-            Time.timeScale = 1;
+            ShowMain();
         }
         else {
-            Time.timeScale = 0;
+            inGameMenu.SetActive(!inGameMenu.activeSelf);
+            if (!inGameMenu.activeSelf)
+            {
+                Time.timeScale = 1;
+
+            }
+            else
+            {
+                Time.timeScale = 0;
+            }
         }
+    }
+
+    public void ShowOptions()
+    {
+        inGameMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+    public void ShowMain()
+    {
+        inGameMenu.SetActive(true);
+        optionsMenu.SetActive(false);
     }
 
     public void RestartGame() {

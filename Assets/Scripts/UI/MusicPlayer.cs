@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MusicPlayer : MonoBehaviour {
 
     public List<AudioClip> musicClips = new List<AudioClip>();
-    private AudioSource musicSource;
+    public AudioSource musicSource;
     AudioClip currentTrack;
     private float length;
     private Coroutine musicLoop;
     private MusicQueue musicQueue;
+    [SerializeField]
+    private Slider musicSlider;
     // Use this for initialization
     void Start() {
         musicQueue = new MusicQueue(musicClips);
@@ -31,6 +34,13 @@ public class MusicPlayer : MonoBehaviour {
 
     public void StartMusic() {
         musicLoop = StartCoroutine(musicQueue.LoopMusic(this, 0, PlayMusicClip));
+    }
+
+    public void UpdateVolume()
+    {
+        musicSource.volume = musicSlider.value;
+       // musicSource.Stop();
+        Debug.Log(musicSource.volume);
     }
 }
     

@@ -43,6 +43,9 @@ public class WeaponShoot : MonoBehaviour
 
     private void Update()
     {
+        if (gameManager.optionsMenu.activeSelf || gameManager.inGameMenu.activeSelf) {
+            return;
+        }
         gameManager.pistol.SetActive(false);
         gameManager.laser.SetActive(false);
         gameManager.machine.SetActive(false);
