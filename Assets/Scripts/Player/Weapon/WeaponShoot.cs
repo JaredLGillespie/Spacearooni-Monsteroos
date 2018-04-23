@@ -25,6 +25,7 @@ public class WeaponShoot : MonoBehaviour
     [SerializeField] private WeaponInfo[] WeaponInfos;
     [SerializeField] private UnityEvent UseDefaultWeapon;
     [SerializeField] public GameManager gameManager;
+    [SerializeField] public MusicPlayer musicPlayer;
     private Animator animator;
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
@@ -35,10 +36,12 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator enableShootCoroutine;
     private IEnumerator disableHoldCoroutine;
     private AudioSource loopSound;
+    private AudioSource shooting;
     private void Awake()
     {
         animator = GetComponent<Animator>();
         loopSound = gameObject.AddComponent<AudioSource>();
+        shooting = gameObject.AddComponent<AudioSource>();
     }
 
     private void Update()
@@ -69,6 +72,7 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot)
                 {
+                    shooting.clip = currentWeapon.shoot;
                     ShootWeapon();
 
                     if (numberOfBullets > 0)
@@ -89,6 +93,7 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot)
                 {
+                    shooting.clip = currentWeapon.shoot;
                     ShootWeapon();
 
                     if (numberOfBullets == 0)
@@ -140,7 +145,8 @@ public class WeaponShoot : MonoBehaviour
 
     private void ShootWeapon()
     {
-        GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
+        //  GetComponent<AudioSource>().PlayOneShot(currentWeapon.shoot);
+        shooting.Play();
         if (numberOfBullets > 0)
             numberOfBullets--;
 
@@ -253,4 +259,9 @@ public class WeaponShoot : MonoBehaviour
         holdTime = 0.0f;
         UseDefaultWeapon.Invoke();
     }
+
+    public void updateSFX() {
+        loopSound.volume = musicPlayer.sfxSlider.value;
+        shooting.volume = musicPlayer.sfxSlider.value;
+    } 
 }

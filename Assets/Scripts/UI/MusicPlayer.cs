@@ -13,6 +13,9 @@ public class MusicPlayer : MonoBehaviour {
     private MusicQueue musicQueue;
     [SerializeField]
     private Slider musicSlider;
+    [SerializeField]
+    public Slider sfxSlider;
+
     // Use this for initialization
     void Start() {
         musicQueue = new MusicQueue(musicClips);
@@ -39,9 +42,8 @@ public class MusicPlayer : MonoBehaviour {
     public void UpdateVolume()
     {
         musicSource.volume = musicSlider.value;
-       // musicSource.Stop();
-        Debug.Log(musicSource.volume);
     }
+
 }
     
 public class MusicQueue {
