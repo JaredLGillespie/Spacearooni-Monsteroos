@@ -218,7 +218,7 @@ public class WeaponShoot : MonoBehaviour
 
         heldObject = Instantiate(currentWeapon.BulletObject, this.transform, true);
         heldObject.transform.position = position;
-        //heldObject.transform.rotation = this.transform.rotation;
+        heldObject.transform.rotation = this.transform.rotation;
 
         // Fix bullet rotation and movement direction
         var mfc = heldObject.GetComponent<MoveForward>();

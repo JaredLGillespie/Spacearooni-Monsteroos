@@ -56,9 +56,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1536
   EnemyTag: Enemy
   Damage: 5
+  CastRadius: 1
 --- !u!114 &114203428342349564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +126,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.03

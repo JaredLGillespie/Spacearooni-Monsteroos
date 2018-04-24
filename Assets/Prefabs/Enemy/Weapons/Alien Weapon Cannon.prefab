@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95935583876016498}
   - component: {fileID: 82460278447363858}
   - component: {fileID: 114725586539408882}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alien Weapon Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95002301659509610}
   - component: {fileID: 82277532172635554}
   - component: {fileID: 114130692424092060}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alien Weapon Disk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

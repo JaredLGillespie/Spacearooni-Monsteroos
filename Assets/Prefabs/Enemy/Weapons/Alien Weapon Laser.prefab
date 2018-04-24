@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95337387863886020}
   - component: {fileID: 82337242868281046}
   - component: {fileID: 114045110258361986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alien Weapon Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
