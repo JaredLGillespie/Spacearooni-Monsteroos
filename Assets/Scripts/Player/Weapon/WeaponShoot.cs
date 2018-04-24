@@ -166,15 +166,20 @@ public class WeaponShoot : MonoBehaviour
         // Fix bullet rotation and movement direction
         var mfc = bullet.GetComponent<MoveForward>();
 
-        if (mfc != null)
+        if (this.transform.parent != null)
         {
             if (this.transform.parent.localScale.x < 0)
             {
-                mfc.SetDirection("left");
                 bullet.transform.Rotate(0, 0, 180, Space.Self);
+
+                if (mfc != null)
+                    mfc.SetDirection("left");
             }
             else
-                mfc.SetDirection("right");
+            {
+                if (mfc != null)
+                    mfc.SetDirection("right");
+            }
         }
 
         // Ignore player and weapon collisions
@@ -204,15 +209,20 @@ public class WeaponShoot : MonoBehaviour
         // Fix bullet rotation and movement direction
         var mfc = heldObject.GetComponent<MoveForward>();
 
-        if (mfc != null)
-        {
+        if (this.transform.parent != null)
+        { 
             if (this.transform.parent.localScale.x < 0)
             {
-                mfc.SetDirection("left");
                 heldObject.transform.Rotate(0, 0, 180, Space.Self);
+
+                if (mfc != null)
+                    mfc.SetDirection("left");
             }
             else
-                mfc.SetDirection("right");
+            {
+                if (mfc != null)
+                    mfc.SetDirection("right");
+            }
         }
 
         // Ignore player and weapon collisions

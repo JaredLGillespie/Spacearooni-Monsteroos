@@ -32,11 +32,11 @@ public class AlienWeaponLaser : MonoBehaviour
     {
         yield return new WaitForSeconds(InitialDelay);
 
-        animator.SetBool("Shoot", true);
+        animator.SetBool("Attack", true);
 
         var position = this.transform.position;
 
-        if (this.transform.parent.localScale.x < 0)
+        if (this.transform.parent != null && this.transform.parent.localScale.x < 0)
             position -= this.transform.right * PositionOffset.x;
         else
             position += this.transform.right * PositionOffset.x;
@@ -50,16 +50,26 @@ public class AlienWeaponLaser : MonoBehaviour
         // Fix bullet rotation and movement direction
         var mfc = heldObject.GetComponent<MoveForward>();
 
-        if (this.transform.parent != null && this.transform.parent.localScale.x < 0)
-            heldObject.transform.Rotate(0, 0, 180, Space.Self);
+        if (this.transform.parent != null)
+        {
+            if (this.transform.parent.localScale.x < 0)
+            {
+                heldObject.transform.Rotate(0, 0, 180, Space.Self);
 
-        if (mfc != null)
-            mfc.SetDirection("left");
-        else
-            mfc.SetDirection("right");
+                if (mfc != null)
+                    mfc.SetDirection("left");
+            }
+            else
+            {
+                if (mfc != null)
+                    mfc.SetDirection("right");
+            }
+        }
 
         // Ignore player and weapon collisions
         Physics2D.IgnoreCollision(heldObject.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
-        Physics2D.IgnoreCollision(heldObject.GetComponent<Collider2D>(), this.transform.parent.gameObject.GetComponent<Collider2D>());
+
+        if (this.transform.parent != null)
+            Physics2D.IgnoreCollision(heldObject.GetComponent<Collider2D>(), this.transform.parent.gameObject.GetComponent<Collider2D>());
     }
 }

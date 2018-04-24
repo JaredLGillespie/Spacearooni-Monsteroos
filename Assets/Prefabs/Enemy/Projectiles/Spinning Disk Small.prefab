@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114522508428597792}
   - component: {fileID: 114674083101014268}
   - component: {fileID: 114442500484498364}
+  - component: {fileID: 114122885755716896}
   m_Layer: 0
   m_Name: Spinning Disk Small
   m_TagString: Untagged
@@ -99,6 +100,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114122885755716896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513664907111598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60509b89113c9343af8f21405e68797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShrinkSize: 0.1
+  ShrinkSpeed: {x: 0.1, y: 0.1}
+  ShrinkInterval: 0.1
+  Delay: 5
 --- !u!114 &114442500484498364
 MonoBehaviour:
   m_ObjectHideFlags: 1

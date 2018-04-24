@@ -5,11 +5,11 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Alien Weapon Laser
+  m_Name: Alien Weapon Cannon
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Attack
-    m_Type: 4
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -33,10 +33,7 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Attack
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102619309385506528}
   m_Solo: 0
@@ -95,7 +92,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 691f29a3a0bb0eb47ba714e7bd0fe826, type: 2}
+  m_Motion: {fileID: 7400000, guid: f9a6dda1c7fe70c42bc954c1c7d5ec9a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -121,7 +118,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 388139e4ce0a5124c8492690861fb7f6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 34625eca7c867c14d8b83da941d1f2da, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

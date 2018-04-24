@@ -8,6 +8,7 @@ public class BeamCastForward : MonoBehaviour
     [SerializeField] private LayerMask HitMask; // What to collide with
     [SerializeField] private string HitTag = "Player"; // Object to hit tag
     [SerializeField] private float Damage; // Amount of damage to do if hit object
+    [SerializeField] private string Direction = "right"; // The direction of the beam
 
     private BeamToPoint beamToPoint;
     private ImpactCreator impactCreator;
@@ -28,7 +29,8 @@ public class BeamCastForward : MonoBehaviour
 
     private void Update()
     {
-        var direction = this.transform.right;
+        var direction = GetBeamDirection();
+
         var distance = Screen.width - this.transform.position.x;
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, distance, HitMask);
 
@@ -48,11 +50,30 @@ public class BeamCastForward : MonoBehaviour
                 var go = hit.transform.gameObject;
 
                 if (go.tag.Equals(HitTag))
-                    go.GetComponent<DamageObject>().InflictDamage(Damage);
+                {
+                    var goco = go.GetComponent<DamageObject>();
+
+                    if (goco != null)
+                        goco.InflictDamage(Damage);
+                }
 
                 StartCoroutine(DoImpact(hit.point));
             }
         }
+    }
+
+    private Vector2 GetBeamDirection()
+    {
+        if (Direction.ToLower().Equals("right"))
+            return this.transform.right;
+        else if (Direction.ToLower().Equals("left"))
+            return -this.transform.right;
+        else if (Direction.ToLower().Equals("up"))
+            return this.transform.up;
+        else if (Direction.ToLower().Equals("down"))
+            return -this.transform.up;
+        else
+            throw new UnityException("Invalid beam direction given: " + Direction);
     }
 
     private IEnumerator DoImpact(Vector3 position)
