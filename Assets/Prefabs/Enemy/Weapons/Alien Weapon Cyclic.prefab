@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 95218055396990260}
   - component: {fileID: 82688884488160104}
   - component: {fileID: 114955321166602620}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alien Weapon Cyclic
   m_TagString: Untagged
   m_Icon: {fileID: 0}

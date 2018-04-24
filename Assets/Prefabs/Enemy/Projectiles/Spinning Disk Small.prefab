@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114674083101014268}
   - component: {fileID: 114442500484498364}
   - component: {fileID: 114122885755716896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spinning Disk Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}

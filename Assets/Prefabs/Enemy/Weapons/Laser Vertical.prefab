@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4305362193075016}
   - component: {fileID: 212061800691281424}
   - component: {fileID: 95494487521795922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114279322698265156}
   - component: {fileID: 114933084637870504}
   - component: {fileID: 114757810799588300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser_Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
   HitTag: Player
   Damage: 5
   Direction: right
+  CastRadius: 1
 --- !u!114 &114933084637870504
 MonoBehaviour:
   m_ObjectHideFlags: 1

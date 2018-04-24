@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114488195664866282}
   - component: {fileID: 114123822580972602}
   - component: {fileID: 114122698930554654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Alien Rocket Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
