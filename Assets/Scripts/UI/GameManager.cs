@@ -18,10 +18,11 @@ public class GameManager : MonoBehaviour {
     [SerializeField] public GameObject laser;
     [SerializeField] public GameObject machine;
     [SerializeField] public GameObject rocket;
+    [SerializeField]
+    public MusicPlayer musicPlayer;
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";
-        laserTimer.text = "";
     }
 
     // Update is called once per frame
@@ -48,11 +49,13 @@ public class GameManager : MonoBehaviour {
             inGameMenu.SetActive(!inGameMenu.activeSelf);
             if (!inGameMenu.activeSelf)
             {
+                musicPlayer.musicSource.UnPause();
                 Time.timeScale = 1;
 
             }
             else
             {
+                musicPlayer.musicSource.Pause();
                 Time.timeScale = 0;
             }
         }
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour {
 
     public void ShowOptions()
     {
+        musicPlayer.musicSource.UnPause();
         inGameMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }

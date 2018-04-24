@@ -30,11 +30,12 @@ public class WeaponShoot : MonoBehaviour
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
     private int numberOfBullets = -1;
-    private float holdTime = 0.0f;
+    public float holdTime = 0.0f;
     private float lastHeldTime = 0.0f;
     private GameObject heldObject;
     private IEnumerator enableShootCoroutine;
     private IEnumerator disableHoldCoroutine;
+    private IEnumerator updateTimer;
     private AudioSource loopSound;
     private AudioSource shooting;
     private void Awake()
@@ -121,14 +122,17 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot && currentWeapon.IsHold)
                 {
+                    updateTimer = updateTime();
+                    StartCoroutine(updateTimer);
                     if (disableHoldCoroutine != null)
                     {
                         loopSound.Stop();
                         StopCoroutine(disableHoldCoroutine);
+                        StopCoroutine(updateTimer);
+                        updateTimer = null;
                         disableHoldCoroutine = null;
 
                         holdTime -= (Time.fixedTime - lastHeldTime);
-                        gameManager.laserTime = holdTime;
                         if (heldObject != null)
                             Destroy(heldObject);
 
@@ -141,6 +145,12 @@ public class WeaponShoot : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator updateTime()
+    {
+        gameManager.laserTime = holdTime;
+        yield return null;
     }
 
     private void ShootWeapon()
@@ -263,8 +273,9 @@ public class WeaponShoot : MonoBehaviour
 
     private IEnumerator DisableHold()
     {
+        Debug.Log("timer started");
         yield return new WaitForSeconds(holdTime);
-        Debug.Log("disableHold");
+        loopSound.Stop();
         animator.SetBool("Shoot", false);
         holdTime = 0.0f;
         UseDefaultWeapon.Invoke();
