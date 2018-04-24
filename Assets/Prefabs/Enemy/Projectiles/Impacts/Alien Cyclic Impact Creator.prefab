@@ -9,31 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1041269292347558}
+  m_RootGameObject: {fileID: 1164248569951320}
   m_IsPrefabParent: 1
---- !u!1 &1041269292347558
+--- !u!1 &1164248569951320
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4642471054705652}
-  - component: {fileID: 114263154541707182}
-  - component: {fileID: 114955893009742030}
+  - component: {fileID: 4069046079232096}
+  - component: {fileID: 114320068264902970}
   m_Layer: 0
-  m_Name: Rocket Impact Creator
+  m_Name: Alien Cyclic Impact Creator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4642471054705652
+--- !u!4 &4069046079232096
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1041269292347558}
+  m_GameObject: {fileID: 1164248569951320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.187284, y: 0.6933466, z: 0.07536916}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,37 +40,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114263154541707182
+--- !u!114 &114320068264902970
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1041269292347558}
+  m_GameObject: {fileID: 1164248569951320}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f56a020807d0da4aa957419311ac882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImpactObject: {fileID: 1896794294296662, guid: 3a15139d09296c64cb3e70cd65e9b314,
+  ImpactObject: {fileID: 1302044080080696, guid: 73e6d44c9d1a8e54fa47bd773c0dc543,
     type: 2}
-  NumberOfImpactObjects: 3
-  ImpactObjectSpread: 0.1
+  NumberOfImpactObjects: 1
+  ImpactObjectSpread: {x: 0, y: 0}
   DelayBetweenImpact: 0.1
   StartImmediately: 1
   DestroyWhenComplete: 1
---- !u!114 &114955893009742030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1041269292347558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec85e7ae5b9670d47b2522fbe4a54cb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DamageTag: Enemy
-  Damage: 10
-  DamageRadius: 0.15
-  ScaleDamage: 1
-  DestroyOnStart: 0

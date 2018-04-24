@@ -89,7 +89,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.11, y: 0.08}
   m_EdgeRadius: 0
 --- !u!95 &95808269636152152
 Animator:
@@ -121,7 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageTag: Player
   Damage: 5
-  CollisionCreator: {fileID: 0}
+  CollisionCreator: {fileID: 1164248569951320, guid: ca88152d3a5036146a1d4b1967149651,
+    type: 2}
 --- !u!114 &114556807845977780
 MonoBehaviour:
   m_ObjectHideFlags: 1

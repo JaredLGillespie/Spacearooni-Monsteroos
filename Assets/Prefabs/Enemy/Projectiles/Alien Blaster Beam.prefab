@@ -56,10 +56,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 768
   HitTag: Player
   Damage: 5
   Direction: down
+  CastRadius: 0.1
 --- !u!114 &114328549431091638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -86,8 +87,8 @@ MonoBehaviour:
   ImpactObject: {fileID: 1274495947272216, guid: 410085e1108b11e4cbeb54d7e6d19cee,
     type: 2}
   NumberOfImpactObjects: 4
-  ImpactObjectSpread: 0.1
-  DelayBetweenImpact: 0.05
+  ImpactObjectSpread: {x: 0.3, y: 0.1}
+  DelayBetweenImpact: 0.04
   StartImmediately: 0
   DestroyWhenComplete: 0
 --- !u!120 &120778374889007432

@@ -135,7 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageTag: Player
   Damage: 5
-  CollisionCreator: {fileID: 0}
+  CollisionCreator: {fileID: 1164248569951320, guid: 4b3471da164f7cb44b48ff03b882603e,
+    type: 2}
 --- !u!114 &114804588437618316
 MonoBehaviour:
   m_ObjectHideFlags: 1

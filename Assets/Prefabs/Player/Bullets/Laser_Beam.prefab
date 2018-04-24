@@ -60,7 +60,6 @@ MonoBehaviour:
   EnemyTag: Enemy
   Damage: 5
   CastRadius: 0.1
-  Test: {fileID: 1059238629573170, guid: c1d13960da586f84fb403dda87d7efec, type: 2}
 --- !u!114 &114203428342349564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,7 +74,7 @@ MonoBehaviour:
   ImpactObject: {fileID: 1274495947272216, guid: 410085e1108b11e4cbeb54d7e6d19cee,
     type: 2}
   NumberOfImpactObjects: 4
-  ImpactObjectSpread: 0.05
+  ImpactObjectSpread: {x: 0.1, y: 0.1}
   DelayBetweenImpact: 0.05
   StartImmediately: 0
   DestroyWhenComplete: 0

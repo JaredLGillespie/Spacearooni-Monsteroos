@@ -57,7 +57,7 @@ MonoBehaviour:
   ImpactObject: {fileID: 1403948877496796, guid: c9b7b746ba73e4b41902436c75f163a4,
     type: 2}
   NumberOfImpactObjects: 4
-  ImpactObjectSpread: 0.05
+  ImpactObjectSpread: {x: 0.3, y: 0.3}
   DelayBetweenImpact: 0.05
   StartImmediately: 0
   DestroyWhenComplete: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   HitTag: Player
   Damage: 5
   Direction: right
-  CastRadius: 1
+  CastRadius: 0.1
 --- !u!114 &114702824783543432
 MonoBehaviour:
   m_ObjectHideFlags: 1
