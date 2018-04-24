@@ -4149,6 +4149,7 @@ GameObject:
   - component: {fileID: 1457214237}
   - component: {fileID: 1457214246}
   - component: {fileID: 1457214247}
+  - component: {fileID: 1457214248}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -4392,6 +4393,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d17870e41b6f94d83aa012ea20f420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1457214248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457214236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f72c9884296493448d4fa9a6b8d4925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthTag: Health
+  PickupProximity: 0.3
+  PickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: HealthPickup+PickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  player: {fileID: 1457214246}
 --- !u!1 &1473159402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6144,6 +6164,23 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.96
+--- !u!1 &1929504350 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1850998697}
+--- !u!114 &1929504351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1929504350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea30a9b0cbe84c6488744bdb5cbb0f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickupName: health
 --- !u!1 &2017404439
 GameObject:
   m_ObjectHideFlags: 0
