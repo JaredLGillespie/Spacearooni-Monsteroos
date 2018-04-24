@@ -28,8 +28,8 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         HandleEsc();
-        ammoLabel.text = "ammo: " + bulletCount;
-        laserTimer.text = "TIMER: " + laserTime;
+        ammoLabel.text = string.Format("ammo: {0}", bulletCount);
+        laserTimer.text = string.Format("TIMER: {0:00.00}", laserTime);
     }
 
     public void HandleEsc()
