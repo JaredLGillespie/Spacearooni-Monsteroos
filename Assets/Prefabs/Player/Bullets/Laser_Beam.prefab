@@ -88,6 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999255b23f5fa3f4593d736bde3e639a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Direction: right
 --- !u!120 &120070844891219882
 LineRenderer:
   m_ObjectHideFlags: 1

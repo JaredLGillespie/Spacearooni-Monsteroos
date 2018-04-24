@@ -188,7 +188,7 @@ public class WeaponShoot : MonoBehaviour
                 bullet.transform.Rotate(0, 0, 180, Space.Self);
 
                 if (mfc != null)
-                    mfc.SetDirection("left");
+                    mfc.SetDirection("right");
             }
             else
             {
@@ -218,7 +218,7 @@ public class WeaponShoot : MonoBehaviour
 
         heldObject = Instantiate(currentWeapon.BulletObject, this.transform, true);
         heldObject.transform.position = position;
-        heldObject.transform.rotation = this.transform.rotation;
+        //heldObject.transform.rotation = this.transform.rotation;
 
         // Fix bullet rotation and movement direction
         var mfc = heldObject.GetComponent<MoveForward>();
@@ -227,10 +227,10 @@ public class WeaponShoot : MonoBehaviour
         { 
             if (this.transform.parent.localScale.x < 0)
             {
-                heldObject.transform.Rotate(0, 0, 180, Space.Self);
+                //heldObject.transform.Rotate(0, 0, 180, Space.Self);
 
                 if (mfc != null)
-                    mfc.SetDirection("left");
+                    mfc.SetDirection("right");
             }
             else
             {
@@ -282,7 +282,6 @@ public class WeaponShoot : MonoBehaviour
 
     private IEnumerator DisableHold()
     {
-        Debug.Log("timer started");
         yield return new WaitForSeconds(holdTime);
         loopSound.Stop();
         animator.SetBool("Shoot", false);
