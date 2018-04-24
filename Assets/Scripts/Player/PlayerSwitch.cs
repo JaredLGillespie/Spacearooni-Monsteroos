@@ -51,11 +51,9 @@ public class PlayerSwitch : MonoBehaviour
 
     public IEnumerator PowerUp()
     {
-        Debug.Log("a");
         healthSuit = HealthSuit();
         StartCoroutine(healthSuit);
         healthTimer.enabled = true;
-        //    yield return new WaitForSeconds(10.0f);
         while (infiniteHealthTime > 0f)
         {
             healthTimer.text = "remaining: " + infiniteHealthTime.ToString();
@@ -63,7 +61,6 @@ public class PlayerSwitch : MonoBehaviour
             infiniteHealthTime -= 1f;
         }
         healthTimer.enabled = false;
-        Debug.Log("b");
         StopCoroutine(healthSuit);
         healthSuit = null;
         UseDefault();
