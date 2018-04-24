@@ -105,6 +105,7 @@ public class WeaponShoot : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
+                StartCoroutine(updateTime(holdTime));
                 if (canShoot && currentWeapon.IsHold)
                 {
                     if (disableHoldCoroutine == null)
@@ -190,7 +191,6 @@ public class WeaponShoot : MonoBehaviour
     private void HoldWeapon()
     {
         loopSound.Play();
-        StartCoroutine(updateTime(holdTime));
         animator.SetBool("Shoot", true);
         lastHeldTime = Time.fixedTime;
 
