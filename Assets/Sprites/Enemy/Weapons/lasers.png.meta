@@ -374,10 +374,10 @@ TextureImporter:
       name: lasers_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 339
-        width: 6
-        height: 10
+        x: 14
+        y: 356
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,10 +388,10 @@ TextureImporter:
       name: lasers_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 341
-        width: 10
-        height: 6
+        x: 31
+        y: 356
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,9 +402,9 @@ TextureImporter:
       name: lasers_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 339
-        width: 9
+        x: 52
+        y: 356
+        width: 18
         height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: lasers_3
       rect:
         serializedVersion: 2
-        x: 44
-        y: 339
-        width: 9
-        height: 9
+        x: 78
+        y: 356
+        width: 20
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -430,10 +430,10 @@ TextureImporter:
       name: lasers_4
       rect:
         serializedVersion: 2
-        x: 71
-        y: 339
-        width: 9
-        height: 9
+        x: 14
+        y: 336
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: lasers_5
       rect:
         serializedVersion: 2
-        x: 87
-        y: 338
-        width: 11
-        height: 11
+        x: 31
+        y: 336
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: lasers_6
       rect:
         serializedVersion: 2
-        x: 103
-        y: 337
-        width: 13
-        height: 13
+        x: 52
+        y: 336
+        width: 18
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -472,10 +472,10 @@ TextureImporter:
       name: lasers_7
       rect:
         serializedVersion: 2
-        x: 138
-        y: 341
-        width: 13
-        height: 13
+        x: 78
+        y: 336
+        width: 20
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: lasers_8
       rect:
         serializedVersion: 2
-        x: 155
-        y: 340
-        width: 15
-        height: 15
+        x: 14
+        y: 315
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: lasers_9
       rect:
         serializedVersion: 2
-        x: 174
-        y: 339
-        width: 17
-        height: 17
+        x: 31
+        y: 315
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +514,10 @@ TextureImporter:
       name: lasers_10
       rect:
         serializedVersion: 2
-        x: 211
-        y: 343
-        width: 11
-        height: 8
+        x: 52
+        y: 315
+        width: 18
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,10 +528,10 @@ TextureImporter:
       name: lasers_11
       rect:
         serializedVersion: 2
-        x: 228
-        y: 343
-        width: 15
-        height: 9
+        x: 78
+        y: 315
+        width: 20
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +542,10 @@ TextureImporter:
       name: lasers_12
       rect:
         serializedVersion: 2
-        x: 249
-        y: 343
-        width: 18
-        height: 9
+        x: 14
+        y: 295
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,10 +556,10 @@ TextureImporter:
       name: lasers_13
       rect:
         serializedVersion: 2
-        x: 275
-        y: 343
-        width: 20
-        height: 10
+        x: 31
+        y: 295
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: lasers_14
       rect:
         serializedVersion: 2
-        x: 312
-        y: 345
-        width: 10
-        height: 5
+        x: 52
+        y: 295
+        width: 18
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +584,10 @@ TextureImporter:
       name: lasers_15
       rect:
         serializedVersion: 2
-        x: 324
-        y: 344
-        width: 7
-        height: 7
+        x: 78
+        y: 295
+        width: 20
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -598,10 +598,10 @@ TextureImporter:
       name: lasers_16
       rect:
         serializedVersion: 2
-        x: 334
-        y: 344
-        width: 7
-        height: 7
+        x: 14
+        y: 275
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,10 +612,10 @@ TextureImporter:
       name: lasers_17
       rect:
         serializedVersion: 2
-        x: 362
-        y: 330
-        width: 13
-        height: 22
+        x: 31
+        y: 275
+        width: 15
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +626,10 @@ TextureImporter:
       name: lasers_18
       rect:
         serializedVersion: 2
-        x: 379
-        y: 330
-        width: 13
-        height: 22
+        x: 52
+        y: 275
+        width: 18
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: lasers_19
       rect:
         serializedVersion: 2
-        x: 396
-        y: 330
-        width: 13
-        height: 22
+        x: 78
+        y: 275
+        width: 20
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,10 +654,10 @@ TextureImporter:
       name: lasers_20
       rect:
         serializedVersion: 2
-        x: 413
-        y: 330
-        width: 13
-        height: 22
+        x: 12
+        y: 255
+        width: 12
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +668,10 @@ TextureImporter:
       name: lasers_21
       rect:
         serializedVersion: 2
-        x: 438
-        y: 293
-        width: 13
-        height: 59
+        x: 27
+        y: 254
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,10 +682,10 @@ TextureImporter:
       name: lasers_22
       rect:
         serializedVersion: 2
-        x: 455
-        y: 293
-        width: 13
-        height: 59
+        x: 37
+        y: 254
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,10 +696,10 @@ TextureImporter:
       name: lasers_23
       rect:
         serializedVersion: 2
-        x: 472
-        y: 293
-        width: 13
-        height: 59
+        x: 47
+        y: 254
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,10 +710,10 @@ TextureImporter:
       name: lasers_24
       rect:
         serializedVersion: 2
-        x: 489
-        y: 293
-        width: 13
-        height: 59
+        x: 58
+        y: 254
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,9 +724,9 @@ TextureImporter:
       name: lasers_25
       rect:
         serializedVersion: 2
-        x: 13
-        y: 321
-        width: 6
+        x: 70
+        y: 254
+        width: 10
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -738,10 +738,10 @@ TextureImporter:
       name: lasers_26
       rect:
         serializedVersion: 2
-        x: 21
-        y: 323
-        width: 10
-        height: 6
+        x: 83
+        y: 254
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -752,10 +752,10 @@ TextureImporter:
       name: lasers_27
       rect:
         serializedVersion: 2
-        x: 33
-        y: 321
-        width: 9
-        height: 9
+        x: 97
+        y: 254
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -766,10 +766,10 @@ TextureImporter:
       name: lasers_28
       rect:
         serializedVersion: 2
-        x: 44
-        y: 321
-        width: 9
-        height: 9
+        x: 112
+        y: 254
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -780,10 +780,10 @@ TextureImporter:
       name: lasers_29
       rect:
         serializedVersion: 2
-        x: 71
-        y: 321
-        width: 9
-        height: 9
+        x: 128
+        y: 254
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,10 +794,10 @@ TextureImporter:
       name: lasers_30
       rect:
         serializedVersion: 2
-        x: 87
-        y: 320
-        width: 11
-        height: 11
+        x: 12
+        y: 235
+        width: 12
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -808,10 +808,10 @@ TextureImporter:
       name: lasers_31
       rect:
         serializedVersion: 2
-        x: 103
-        y: 319
-        width: 13
-        height: 13
+        x: 27
+        y: 234
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: lasers_32
       rect:
         serializedVersion: 2
-        x: 138
-        y: 321
-        width: 13
-        height: 13
+        x: 37
+        y: 234
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -836,10 +836,10 @@ TextureImporter:
       name: lasers_33
       rect:
         serializedVersion: 2
-        x: 155
-        y: 320
-        width: 15
-        height: 15
+        x: 47
+        y: 234
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -850,10 +850,10 @@ TextureImporter:
       name: lasers_34
       rect:
         serializedVersion: 2
-        x: 174
-        y: 319
-        width: 17
-        height: 17
+        x: 58
+        y: 234
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -864,10 +864,10 @@ TextureImporter:
       name: lasers_35
       rect:
         serializedVersion: 2
-        x: 211
-        y: 323
-        width: 11
-        height: 8
+        x: 70
+        y: 234
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -878,10 +878,10 @@ TextureImporter:
       name: lasers_36
       rect:
         serializedVersion: 2
-        x: 228
-        y: 323
-        width: 15
-        height: 9
+        x: 83
+        y: 234
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -892,10 +892,10 @@ TextureImporter:
       name: lasers_37
       rect:
         serializedVersion: 2
-        x: 249
-        y: 323
-        width: 18
-        height: 9
+        x: 97
+        y: 234
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -906,10 +906,10 @@ TextureImporter:
       name: lasers_38
       rect:
         serializedVersion: 2
-        x: 275
-        y: 323
-        width: 20
-        height: 10
+        x: 112
+        y: 234
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -920,10 +920,10 @@ TextureImporter:
       name: lasers_39
       rect:
         serializedVersion: 2
-        x: 312
-        y: 326
-        width: 10
-        height: 5
+        x: 128
+        y: 234
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -934,10 +934,10 @@ TextureImporter:
       name: lasers_40
       rect:
         serializedVersion: 2
-        x: 324
-        y: 325
-        width: 7
-        height: 7
+        x: 12
+        y: 216
+        width: 12
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -948,8 +948,8 @@ TextureImporter:
       name: lasers_41
       rect:
         serializedVersion: 2
-        x: 334
-        y: 325
+        x: 27
+        y: 215
         width: 7
         height: 7
       alignment: 0
@@ -962,10 +962,10 @@ TextureImporter:
       name: lasers_42
       rect:
         serializedVersion: 2
-        x: 363
-        y: 315
-        width: 11
-        height: 12
+        x: 37
+        y: 215
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,10 +976,10 @@ TextureImporter:
       name: lasers_43
       rect:
         serializedVersion: 2
-        x: 380
-        y: 315
-        width: 11
-        height: 12
+        x: 47
+        y: 215
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,10 +990,10 @@ TextureImporter:
       name: lasers_44
       rect:
         serializedVersion: 2
-        x: 397
-        y: 315
-        width: 11
-        height: 12
+        x: 58
+        y: 215
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1004,10 +1004,10 @@ TextureImporter:
       name: lasers_45
       rect:
         serializedVersion: 2
-        x: 414
-        y: 315
-        width: 11
-        height: 12
+        x: 70
+        y: 215
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1018,10 +1018,10 @@ TextureImporter:
       name: lasers_46
       rect:
         serializedVersion: 2
-        x: 13
-        y: 303
-        width: 6
-        height: 10
+        x: 83
+        y: 215
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1032,10 +1032,10 @@ TextureImporter:
       name: lasers_47
       rect:
         serializedVersion: 2
-        x: 21
-        y: 305
-        width: 10
-        height: 6
+        x: 97
+        y: 215
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1046,10 +1046,10 @@ TextureImporter:
       name: lasers_48
       rect:
         serializedVersion: 2
-        x: 33
-        y: 303
-        width: 9
-        height: 9
+        x: 112
+        y: 215
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1060,10 +1060,10 @@ TextureImporter:
       name: lasers_49
       rect:
         serializedVersion: 2
-        x: 44
-        y: 303
-        width: 9
-        height: 9
+        x: 128
+        y: 215
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1074,10 +1074,10 @@ TextureImporter:
       name: lasers_50
       rect:
         serializedVersion: 2
-        x: 71
-        y: 303
-        width: 9
-        height: 9
+        x: 12
+        y: 197
+        width: 12
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1088,10 +1088,10 @@ TextureImporter:
       name: lasers_51
       rect:
         serializedVersion: 2
-        x: 87
-        y: 302
-        width: 11
-        height: 11
+        x: 27
+        y: 196
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,10 +1102,10 @@ TextureImporter:
       name: lasers_52
       rect:
         serializedVersion: 2
-        x: 103
-        y: 301
-        width: 13
-        height: 13
+        x: 37
+        y: 196
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1116,10 +1116,10 @@ TextureImporter:
       name: lasers_53
       rect:
         serializedVersion: 2
-        x: 138
-        y: 301
-        width: 13
-        height: 13
+        x: 47
+        y: 196
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1130,10 +1130,10 @@ TextureImporter:
       name: lasers_54
       rect:
         serializedVersion: 2
-        x: 155
-        y: 300
-        width: 15
-        height: 15
+        x: 58
+        y: 196
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1144,10 +1144,10 @@ TextureImporter:
       name: lasers_55
       rect:
         serializedVersion: 2
-        x: 174
-        y: 299
-        width: 17
-        height: 17
+        x: 70
+        y: 196
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1158,10 +1158,10 @@ TextureImporter:
       name: lasers_56
       rect:
         serializedVersion: 2
-        x: 211
-        y: 302
+        x: 83
+        y: 196
         width: 11
-        height: 8
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1172,10 +1172,10 @@ TextureImporter:
       name: lasers_57
       rect:
         serializedVersion: 2
-        x: 228
-        y: 302
-        width: 15
-        height: 9
+        x: 97
+        y: 196
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1186,10 +1186,10 @@ TextureImporter:
       name: lasers_58
       rect:
         serializedVersion: 2
-        x: 249
-        y: 302
-        width: 18
-        height: 9
+        x: 112
+        y: 196
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1200,10 +1200,10 @@ TextureImporter:
       name: lasers_59
       rect:
         serializedVersion: 2
-        x: 275
-        y: 302
-        width: 20
-        height: 10
+        x: 128
+        y: 196
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1214,9 +1214,9 @@ TextureImporter:
       name: lasers_60
       rect:
         serializedVersion: 2
-        x: 312
-        y: 305
-        width: 10
+        x: 12
+        y: 178
+        width: 12
         height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1228,8 +1228,8 @@ TextureImporter:
       name: lasers_61
       rect:
         serializedVersion: 2
-        x: 324
-        y: 304
+        x: 27
+        y: 177
         width: 7
         height: 7
       alignment: 0
@@ -1242,8 +1242,8 @@ TextureImporter:
       name: lasers_62
       rect:
         serializedVersion: 2
-        x: 334
-        y: 304
+        x: 37
+        y: 177
         width: 7
         height: 7
       alignment: 0
@@ -1256,10 +1256,10 @@ TextureImporter:
       name: lasers_63
       rect:
         serializedVersion: 2
-        x: 13
-        y: 285
-        width: 6
-        height: 10
+        x: 47
+        y: 177
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1270,10 +1270,10 @@ TextureImporter:
       name: lasers_64
       rect:
         serializedVersion: 2
-        x: 21
-        y: 287
-        width: 10
-        height: 6
+        x: 58
+        y: 177
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1284,10 @@ TextureImporter:
       name: lasers_65
       rect:
         serializedVersion: 2
-        x: 33
-        y: 285
-        width: 9
-        height: 9
+        x: 70
+        y: 177
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1298,10 +1298,10 @@ TextureImporter:
       name: lasers_66
       rect:
         serializedVersion: 2
-        x: 44
-        y: 285
-        width: 9
-        height: 9
+        x: 83
+        y: 177
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1312,10 +1312,10 @@ TextureImporter:
       name: lasers_67
       rect:
         serializedVersion: 2
-        x: 71
-        y: 285
-        width: 9
-        height: 9
+        x: 97
+        y: 177
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1326,10 +1326,10 @@ TextureImporter:
       name: lasers_68
       rect:
         serializedVersion: 2
-        x: 87
-        y: 284
-        width: 11
-        height: 11
+        x: 112
+        y: 177
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1340,10 +1340,10 @@ TextureImporter:
       name: lasers_69
       rect:
         serializedVersion: 2
-        x: 103
-        y: 283
-        width: 13
-        height: 13
+        x: 128
+        y: 177
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1354,10 +1354,10 @@ TextureImporter:
       name: lasers_70
       rect:
         serializedVersion: 2
-        x: 138
-        y: 281
-        width: 13
-        height: 13
+        x: 13
+        y: 163
+        width: 10
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1368,10 +1368,10 @@ TextureImporter:
       name: lasers_71
       rect:
         serializedVersion: 2
-        x: 155
-        y: 280
-        width: 15
-        height: 15
+        x: 25
+        y: 162
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1382,10 +1382,10 @@ TextureImporter:
       name: lasers_72
       rect:
         serializedVersion: 2
-        x: 174
-        y: 279
-        width: 17
-        height: 17
+        x: 35
+        y: 162
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1396,10 +1396,10 @@ TextureImporter:
       name: lasers_73
       rect:
         serializedVersion: 2
-        x: 211
-        y: 282
-        width: 11
-        height: 8
+        x: 13
+        y: 144
+        width: 10
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1410,10 +1410,10 @@ TextureImporter:
       name: lasers_74
       rect:
         serializedVersion: 2
-        x: 228
-        y: 282
-        width: 15
-        height: 9
+        x: 25
+        y: 143
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,10 +1424,10 @@ TextureImporter:
       name: lasers_75
       rect:
         serializedVersion: 2
-        x: 249
-        y: 282
-        width: 18
-        height: 9
+        x: 35
+        y: 143
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1438,10 +1438,10 @@ TextureImporter:
       name: lasers_76
       rect:
         serializedVersion: 2
-        x: 275
-        y: 282
-        width: 20
-        height: 10
+        x: 13
+        y: 123
+        width: 10
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1452,10 +1452,10 @@ TextureImporter:
       name: lasers_77
       rect:
         serializedVersion: 2
-        x: 312
-        y: 285
-        width: 10
-        height: 5
+        x: 25
+        y: 122
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1466,8 +1466,8 @@ TextureImporter:
       name: lasers_78
       rect:
         serializedVersion: 2
-        x: 324
-        y: 284
+        x: 35
+        y: 122
         width: 7
         height: 7
       alignment: 0
@@ -1480,10 +1480,10 @@ TextureImporter:
       name: lasers_79
       rect:
         serializedVersion: 2
-        x: 334
-        y: 284
-        width: 7
-        height: 7
+        x: 13
+        y: 103
+        width: 10
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1494,10 +1494,10 @@ TextureImporter:
       name: lasers_80
       rect:
         serializedVersion: 2
-        x: 12
-        y: 254
-        width: 12
-        height: 5
+        x: 25
+        y: 102
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1508,8 +1508,8 @@ TextureImporter:
       name: lasers_81
       rect:
         serializedVersion: 2
-        x: 27
-        y: 253
+        x: 35
+        y: 102
         width: 7
         height: 7
       alignment: 0
@@ -1522,10 +1522,10 @@ TextureImporter:
       name: lasers_82
       rect:
         serializedVersion: 2
-        x: 37
-        y: 253
-        width: 7
-        height: 7
+        x: 13
+        y: 84
+        width: 10
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1536,10 +1536,10 @@ TextureImporter:
       name: lasers_83
       rect:
         serializedVersion: 2
-        x: 47
-        y: 253
-        width: 8
-        height: 8
+        x: 25
+        y: 83
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1550,10 +1550,10 @@ TextureImporter:
       name: lasers_84
       rect:
         serializedVersion: 2
-        x: 58
-        y: 253
-        width: 9
-        height: 9
+        x: 35
+        y: 83
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1564,10 +1564,10 @@ TextureImporter:
       name: lasers_85
       rect:
         serializedVersion: 2
-        x: 70
-        y: 253
-        width: 10
-        height: 10
+        x: 12
+        y: 56
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1578,8 +1578,8 @@ TextureImporter:
       name: lasers_86
       rect:
         serializedVersion: 2
-        x: 83
-        y: 253
+        x: 26
+        y: 56
         width: 11
         height: 11
       alignment: 0
@@ -1592,10 +1592,10 @@ TextureImporter:
       name: lasers_87
       rect:
         serializedVersion: 2
-        x: 97
-        y: 253
-        width: 12
-        height: 12
+        x: 40
+        y: 56
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1606,10 +1606,10 @@ TextureImporter:
       name: lasers_88
       rect:
         serializedVersion: 2
-        x: 112
-        y: 253
-        width: 13
-        height: 13
+        x: 54
+        y: 56
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1620,10 +1620,10 @@ TextureImporter:
       name: lasers_89
       rect:
         serializedVersion: 2
-        x: 128
-        y: 253
-        width: 14
-        height: 14
+        x: 68
+        y: 56
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1634,10 +1634,10 @@ TextureImporter:
       name: lasers_90
       rect:
         serializedVersion: 2
-        x: 438
-        y: 227
-        width: 13
-        height: 49
+        x: 82
+        y: 56
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1648,10 +1648,10 @@ TextureImporter:
       name: lasers_91
       rect:
         serializedVersion: 2
-        x: 455
-        y: 227
-        width: 13
-        height: 49
+        x: 12
+        y: 42
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1662,10 +1662,10 @@ TextureImporter:
       name: lasers_92
       rect:
         serializedVersion: 2
-        x: 472
-        y: 227
-        width: 13
-        height: 49
+        x: 26
+        y: 42
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1676,10 +1676,10 @@ TextureImporter:
       name: lasers_93
       rect:
         serializedVersion: 2
-        x: 489
-        y: 227
-        width: 13
-        height: 49
+        x: 40
+        y: 42
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1690,10 +1690,10 @@ TextureImporter:
       name: lasers_94
       rect:
         serializedVersion: 2
-        x: 70
-        y: 233
-        width: 10
-        height: 10
+        x: 54
+        y: 42
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,8 +1704,8 @@ TextureImporter:
       name: lasers_95
       rect:
         serializedVersion: 2
-        x: 83
-        y: 233
+        x: 68
+        y: 42
         width: 11
         height: 11
       alignment: 0
@@ -1718,10 +1718,10 @@ TextureImporter:
       name: lasers_96
       rect:
         serializedVersion: 2
-        x: 97
-        y: 233
-        width: 12
-        height: 12
+        x: 82
+        y: 42
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1732,8 +1732,8 @@ TextureImporter:
       name: lasers_97
       rect:
         serializedVersion: 2
-        x: 112
-        y: 233
+        x: 11
+        y: 20
         width: 13
         height: 13
       alignment: 0
@@ -1746,10 +1746,10 @@ TextureImporter:
       name: lasers_98
       rect:
         serializedVersion: 2
-        x: 128
-        y: 233
-        width: 14
-        height: 14
+        x: 27
+        y: 20
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1760,10 +1760,10 @@ TextureImporter:
       name: lasers_99
       rect:
         serializedVersion: 2
-        x: 173
-        y: 238
-        width: 11
-        height: 11
+        x: 43
+        y: 20
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1774,10 +1774,10 @@ TextureImporter:
       name: lasers_100
       rect:
         serializedVersion: 2
-        x: 188
-        y: 238
-        width: 11
-        height: 11
+        x: 59
+        y: 20
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1788,10 +1788,10 @@ TextureImporter:
       name: lasers_101
       rect:
         serializedVersion: 2
-        x: 203
-        y: 238
-        width: 11
-        height: 11
+        x: 75
+        y: 20
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1802,10 +1802,10 @@ TextureImporter:
       name: lasers_102
       rect:
         serializedVersion: 2
-        x: 218
-        y: 238
-        width: 11
-        height: 11
+        x: 91
+        y: 20
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1816,10 +1816,10 @@ TextureImporter:
       name: lasers_103
       rect:
         serializedVersion: 2
-        x: 233
-        y: 238
-        width: 11
-        height: 11
+        x: 11
+        y: 4
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1830,10 +1830,10 @@ TextureImporter:
       name: lasers_104
       rect:
         serializedVersion: 2
-        x: 248
-        y: 238
-        width: 11
-        height: 11
+        x: 27
+        y: 4
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1844,10 +1844,10 @@ TextureImporter:
       name: lasers_105
       rect:
         serializedVersion: 2
-        x: 263
-        y: 238
-        width: 11
-        height: 11
+        x: 43
+        y: 4
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1858,10 +1858,10 @@ TextureImporter:
       name: lasers_106
       rect:
         serializedVersion: 2
-        x: 314
-        y: 242
-        width: 11
-        height: 11
+        x: 59
+        y: 4
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1872,10 +1872,10 @@ TextureImporter:
       name: lasers_107
       rect:
         serializedVersion: 2
-        x: 328
-        y: 242
-        width: 11
-        height: 11
+        x: 75
+        y: 4
+        width: 13
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1886,2558 +1886,10 @@ TextureImporter:
       name: lasers_108
       rect:
         serializedVersion: 2
-        x: 342
-        y: 242
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_109
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 242
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_110
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 242
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_111
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 242
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_112
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 234
-        width: 12
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_113
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 233
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_114
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 233
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_115
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 233
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_116
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 233
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_117
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_118
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_119
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_120
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_121
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_122
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 228
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_123
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 214
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_124
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 214
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_125
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 214
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_126
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 214
+        x: 91
+        y: 4
         width: 13
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_127
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 214
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_128
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_129
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_130
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_131
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_132
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_133
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_134
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 223
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_135
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 215
-        width: 12
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_136
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 214
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_137
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 214
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_138
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 214
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_139
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 214
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_140
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_141
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_142
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_143
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_144
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_145
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_146
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 208
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_147
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_148
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_149
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_150
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_151
-      rect:
-        serializedVersion: 2
-        x: 377
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_152
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 206
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_153
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 196
-        width: 12
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_154
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 195
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_155
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 195
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_156
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 195
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_157
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 195
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_158
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 195
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_159
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 195
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_160
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 195
-        width: 12
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_161
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 195
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_162
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 195
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_163
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_164
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_165
-      rect:
-        serializedVersion: 2
-        x: 203
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_166
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_167
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_168
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_169
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_170
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 193
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_171
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_172
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_173
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_174
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_175
-      rect:
-        serializedVersion: 2
-        x: 377
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_176
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 190
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_177
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 166
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_178
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 166
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_179
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 166
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_180
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 166
-        width: 30
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_181
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 151
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_182
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 151
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_183
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 151
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_184
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 151
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_185
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 151
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_186
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 148
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_187
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 148
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_188
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 148
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_189
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 148
-        width: 30
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_190
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 151
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_191
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 151
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_192
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 150
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_193
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 151
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_194
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 151
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_195
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 150
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_196
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 151
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_197
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 151
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_198
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 150
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_199
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 151
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_200
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 151
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_201
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 150
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_202
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 130
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_203
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 130
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_204
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 130
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_205
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 130
-        width: 30
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_206
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_207
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_208
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_209
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_210
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_211
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_212
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_213
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 136
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_214
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 132
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_215
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 132
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_216
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 132
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_217
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 132
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_218
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 132
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_219
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 112
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_220
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 112
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_221
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 112
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_222
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 112
-        width: 30
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_223
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_224
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 118
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_225
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_226
-      rect:
-        serializedVersion: 2
-        x: 181
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_227
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 118
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_228
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_229
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_230
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 118
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_231
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_232
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_233
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 118
-        width: 10
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_234
-      rect:
-        serializedVersion: 2
-        x: 345
-        y: 119
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_235
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 116
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_236
-      rect:
-        serializedVersion: 2
-        x: 423
-        y: 116
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_237
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 116
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_238
-      rect:
-        serializedVersion: 2
-        x: 467
-        y: 116
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_239
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 116
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_240
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 64
-        width: 8
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_241
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 64
-        width: 8
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_242
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 64
-        width: 8
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_243
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 64
-        width: 8
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_244
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_245
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_246
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_247
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_248
-      rect:
-        serializedVersion: 2
-        x: 186
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_249
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_250
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_251
-      rect:
-        serializedVersion: 2
-        x: 234
-        y: 81
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_252
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 77
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_253
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 77
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_254
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 77
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_255
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 77
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_256
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 77
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_257
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 89
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_258
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 89
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_259
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 90
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_260
-      rect:
-        serializedVersion: 2
-        x: 466
-        y: 90
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_261
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 90
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_262
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 68
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_263
-      rect:
-        serializedVersion: 2
-        x: 422
-        y: 68
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_264
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 69
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_265
-      rect:
-        serializedVersion: 2
-        x: 466
-        y: 69
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_266
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 69
-        width: 10
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_267
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 41
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_268
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 41
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_269
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 41
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_270
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 41
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_271
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 47
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_272
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 47
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_273
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 47
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_274
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 47
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_275
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 43
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_276
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 43
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_277
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 20
-        width: 11
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_278
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 24
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_279
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 24
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_280
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 24
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_281
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 24
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_282
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 18
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_283
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 18
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_284
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 18
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_285
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 18
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_286
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 34
-        width: 39
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_287
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 12
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_288
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 12
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_289
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 12
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: lasers_290
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 12
-        width: 8
-        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

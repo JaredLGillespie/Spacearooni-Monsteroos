@@ -28,6 +28,12 @@ TextureImporter:
     21300042: laser_explosions_30x30_21
     21300044: laser_explosions_30x30_22
     21300046: laser_explosions_30x30_23
+    21300048: laser_explosions_30x30_24
+    21300050: laser_explosions_30x30_25
+    21300052: laser_explosions_30x30_26
+    21300054: laser_explosions_30x30_27
+    21300056: laser_explosions_30x30_28
+    21300058: laser_explosions_30x30_29
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -122,11 +128,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,11 +142,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,11 +156,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,11 +170,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,11 +184,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 90
+        y: 120
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,11 +198,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -206,11 +212,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,11 +226,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,11 +240,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,11 +254,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,11 +268,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 60
+        y: 90
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,11 +282,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,11 +296,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,11 +310,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,11 +324,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -332,11 +338,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,11 +352,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 30
+        y: 60
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,11 +366,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 30
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -374,11 +380,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 0
+        y: 30
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,11 +394,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 0
+        y: 30
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,11 +408,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 90
-        y: 0
+        y: 30
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -416,11 +422,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 0
+        y: 30
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,11 +436,95 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
+        y: 30
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_24
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 30
         height: 30
-      alignment: 9
-      pivot: {x: 0.515, y: 0.515}
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: laser_explosions_30x30_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
