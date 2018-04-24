@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.Events;
 using System.Linq;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
 public class PlayerSwitch : MonoBehaviour
@@ -14,7 +15,10 @@ public class PlayerSwitch : MonoBehaviour
     [SerializeField] private string DefaultResourcePath;
     [SerializeField] private string AltResourcePath;
     [SerializeField] private SwitchPlayerEvent SwitchPlayer;
-
+    private IEnumerator healthSuit;
+    private float infiniteHealthTime = 10f;
+    public Text healthTimer;
+    [SerializeField] Player player; 
     private Animator animator;
 
     private void Awake()
@@ -41,5 +45,36 @@ public class PlayerSwitch : MonoBehaviour
         animator.runtimeAnimatorController = Resources.Load(AltResourcePath, typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
 
         SwitchPlayer.Invoke(name);
+        player.fillHealth();
+        StartCoroutine(PowerUp());
+    }
+
+    public IEnumerator PowerUp()
+    {
+        Debug.Log("a");
+        healthSuit = HealthSuit();
+        StartCoroutine(healthSuit);
+        healthTimer.enabled = true;
+        //    yield return new WaitForSeconds(10.0f);
+        while (infiniteHealthTime > 0f)
+        {
+            healthTimer.text = "remaining: " + infiniteHealthTime.ToString();
+            yield return new WaitForSeconds(1f);
+            infiniteHealthTime -= 1f;
+        }
+        healthTimer.enabled = false;
+        Debug.Log("b");
+        StopCoroutine(healthSuit);
+        healthSuit = null;
+        UseDefault();
+    }
+
+    public IEnumerator HealthSuit()
+    {
+        while (true)
+        {
+            player.fillHealth();
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }

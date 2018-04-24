@@ -12,8 +12,7 @@ public class GameManager : MonoBehaviour {
     private Text ammoLabel;
     public int bulletCount=0;
     public float laserTime = 0.0f;
-    [SerializeField]
-    private Text laserTimer;
+    [SerializeField] public Text laserTimer;
     [SerializeField] public GameObject pistol;
     [SerializeField] public GameObject laser;
     [SerializeField] public GameObject machine;

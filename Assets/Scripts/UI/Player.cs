@@ -27,4 +27,8 @@ public class Player : MonoBehaviour {
     public void pickUpHealth() {
         health.CurrentVal += 15;
     }
+
+    public void fillHealth() {
+        health.CurrentVal = 100;
+    }
 }
