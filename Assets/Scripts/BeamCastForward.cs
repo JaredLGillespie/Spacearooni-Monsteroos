@@ -9,7 +9,7 @@ public class BeamCastForward : MonoBehaviour
     [SerializeField] private string HitTag = "Player"; // Object to hit tag
     [SerializeField] private float Damage; // Amount of damage to do if hit object
     [SerializeField] private string Direction = "right"; // The direction of the beam
-    [SerializeField] private float CastRadius = 1.0f; // The radius of the circle cast
+    [SerializeField] private float CastRadius = 0.1f; // The radius of the circle cast
 
     private BeamToPoint beamToPoint;
     private ImpactCreator impactCreator;
@@ -33,8 +33,7 @@ public class BeamCastForward : MonoBehaviour
         var direction = GetBeamDirection();
 
         var distance = Screen.width - this.transform.position.x;
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, distance, HitMask);
-        //RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, CastRadius, direction, distance, HitMask);
+        RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, CastRadius, direction, distance, HitMask);
 
         if (hit == null || !hit)
         {

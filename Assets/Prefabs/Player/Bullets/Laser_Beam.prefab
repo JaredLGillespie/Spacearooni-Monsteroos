@@ -59,7 +59,8 @@ MonoBehaviour:
     m_Bits: 1536
   EnemyTag: Enemy
   Damage: 5
-  CastRadius: 1
+  CastRadius: 0.1
+  Test: {fileID: 1059238629573170, guid: c1d13960da586f84fb403dda87d7efec, type: 2}
 --- !u!114 &114203428342349564
 MonoBehaviour:
   m_ObjectHideFlags: 1

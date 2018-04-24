@@ -8,7 +8,7 @@ public class BeamCastToMouse : MonoBehaviour
     [SerializeField] private LayerMask HitMask; // What to collide with
     [SerializeField] private string EnemyTag = "Enemy"; // Enemy tag
     [SerializeField] private float Damage; // Amount of damage to do if hit enemy
-    [SerializeField] private float CastRadius = 1.0f; // The radius of the circle cast
+    [SerializeField] private float CastRadius = 0.1f; // The radius of the circle cast
 
     private BeamToPoint beamToPoint;
     private ImpactCreator impactCreator;
@@ -32,8 +32,7 @@ public class BeamCastToMouse : MonoBehaviour
         var mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         var direction = (mouse - this.transform.position).normalized;
         var distance = (mouse - this.transform.position).magnitude;
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, distance, HitMask);
-        //RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, CastRadius, direction, distance, HitMask);
+        RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, CastRadius, direction, distance, HitMask);
 
         if (hit == null || !hit)
         {
