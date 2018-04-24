@@ -23,4 +23,8 @@ public class Player : MonoBehaviour {
             health.CurrentVal += 10;
         }
     }
+
+    public void pickUpHealth() {
+        health.CurrentVal += 15;
+    }
 }
