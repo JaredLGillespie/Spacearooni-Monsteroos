@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";
-        laserTimer.text = "";
     }
 
     // Update is called once per frame

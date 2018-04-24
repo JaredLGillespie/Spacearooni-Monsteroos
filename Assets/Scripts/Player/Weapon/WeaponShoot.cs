@@ -128,7 +128,6 @@ public class WeaponShoot : MonoBehaviour
                         disableHoldCoroutine = null;
 
                         holdTime -= (Time.fixedTime - lastHeldTime);
-                        gameManager.laserTime = holdTime;
                         if (heldObject != null)
                             Destroy(heldObject);
 
@@ -141,6 +140,12 @@ public class WeaponShoot : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator updateTime(float holdTime)
+    {
+        yield return null;
+        gameManager.laserTime = holdTime;
     }
 
     private void ShootWeapon()
@@ -185,6 +190,7 @@ public class WeaponShoot : MonoBehaviour
     private void HoldWeapon()
     {
         loopSound.Play();
+        StartCoroutine(updateTime(holdTime));
         animator.SetBool("Shoot", true);
         lastHeldTime = Time.fixedTime;
 
