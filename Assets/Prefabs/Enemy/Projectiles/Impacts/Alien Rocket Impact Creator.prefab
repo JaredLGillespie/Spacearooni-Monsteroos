@@ -54,7 +54,7 @@ MonoBehaviour:
   ImpactObject: {fileID: 1874989327746106, guid: 9512b89995d2b534382bde435edcf32f,
     type: 2}
   NumberOfImpactObjects: 3
-  ImpactObjectSpread: {x: 0.3, y: 0.3}
+  ImpactObjectSpread: {x: 0.1, y: 0.1}
   DelayBetweenImpact: 0.1
   StartImmediately: 1
   DestroyWhenComplete: 1

@@ -1,22 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider2D))]
-public class HealthPickup : MonoBehaviour
+public class SkinPickup : MonoBehaviour
 {
     [Serializable]
     private class PickupEvent : UnityEvent { }
 
-    [SerializeField] private string HealthTag = "Health"; // Tag for weapons
+    [SerializeField] private string SkinTag = "Skin"; // Tag for skin
     [SerializeField] private float PickupProximity = 5.0f; // How close you have to be to pickup weapon
     [SerializeField] private PickupEvent Pickup; // Event to trigger object being picked up
 
     private void FixedUpdate()
     {
-        var pickups = GameObject.FindGameObjectsWithTag(HealthTag);
+        var pickups = GameObject.FindGameObjectsWithTag(SkinTag);
 
         foreach (var pickup in pickups)
         {

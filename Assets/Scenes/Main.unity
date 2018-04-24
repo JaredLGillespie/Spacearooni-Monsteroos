@@ -1502,6 +1502,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de8fa5b703dc0be44b5f386a274bf3b6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &407265744
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642583760933750, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_Name
+      value: Pickup Skin
+      objectReference: {fileID: 0}
+    - target: {fileID: 212666131454993076, guid: 9bc78c2efa2b40c44a5144010d86bae2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: abe6bcf180ff2d0458ad44a41a029f81,
+        type: 3}
+    - target: {fileID: 95230743671431240, guid: 9bc78c2efa2b40c44a5144010d86bae2,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: beb29a26f14529f48b457aba8dec97de,
+        type: 2}
+    - target: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+      propertyPath: m_TagString
+      value: Skin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &411961829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,10 +4334,12 @@ GameObject:
   - component: {fileID: 1457214240}
   - component: {fileID: 1457214239}
   - component: {fileID: 1457214238}
-  - component: {fileID: 1457214237}
   - component: {fileID: 1457214246}
   - component: {fileID: 1457214247}
+  - component: {fileID: 1457214237}
   - component: {fileID: 1457214248}
+  - component: {fileID: 1457214250}
+  - component: {fileID: 1457214249}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -4296,7 +4360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponTag: Weapon
   PickupProximity: 0.3
-  SwitchWeapon:
+  Pickup:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 110290037}
@@ -4310,8 +4374,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: WeaponPickup+SwitchWeaponEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    m_TypeName: WeaponPickup+PickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &1457214238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,12 +4596,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthTag: Health
   PickupProximity: 0.3
-  PickUp:
+  Pickup:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1457214246}
+        m_MethodName: pickUpHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: HealthPickup+PickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  player: {fileID: 1457214246}
+--- !u!114 &1457214249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457214236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf611ac328302d4b81970bcd2c33048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultResourcePath: Animators/Player
+  AltResourcePath: Animators/Player Alt
+  SwitchPlayer:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: PlayerSwitch+SwitchPlayerEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1457214250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457214236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23598f0abb8762e44998f0b995c69b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkinTag: Skin
+  PickupProximity: 0.3
+  Pickup:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1457214249}
+        m_MethodName: UseAlt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: SkinPickup+PickupEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1473159402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,23 +6495,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.96
---- !u!1 &1929504350 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1850998697}
---- !u!114 &1929504351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1929504350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea30a9b0cbe84c6488744bdb5cbb0f5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickupName: health
 --- !u!1 &2017404439
 GameObject:
   m_ObjectHideFlags: 0
