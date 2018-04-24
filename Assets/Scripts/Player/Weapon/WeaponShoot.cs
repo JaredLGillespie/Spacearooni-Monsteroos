@@ -30,11 +30,12 @@ public class WeaponShoot : MonoBehaviour
     private WeaponInfo currentWeapon;
     private bool canShoot = true;
     private int numberOfBullets = -1;
-    private float holdTime = 0.0f;
+    public float holdTime = 0.0f;
     private float lastHeldTime = 0.0f;
     private GameObject heldObject;
     private IEnumerator enableShootCoroutine;
     private IEnumerator disableHoldCoroutine;
+    private IEnumerator updateTimer;
     private AudioSource loopSound;
     private AudioSource shooting;
     private void Awake()
@@ -105,7 +106,6 @@ public class WeaponShoot : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                StartCoroutine(updateTime(holdTime));
                 if (canShoot && currentWeapon.IsHold)
                 {
                     if (disableHoldCoroutine == null)
@@ -122,10 +122,14 @@ public class WeaponShoot : MonoBehaviour
             {
                 if (canShoot && currentWeapon.IsHold)
                 {
+                    updateTimer = updateTime();
+                    StartCoroutine(updateTimer);
                     if (disableHoldCoroutine != null)
                     {
                         loopSound.Stop();
                         StopCoroutine(disableHoldCoroutine);
+                        StopCoroutine(updateTimer);
+                        updateTimer = null;
                         disableHoldCoroutine = null;
 
                         holdTime -= (Time.fixedTime - lastHeldTime);
@@ -143,10 +147,10 @@ public class WeaponShoot : MonoBehaviour
         }
     }
 
-    private IEnumerator updateTime(float holdTime)
+    private IEnumerator updateTime()
     {
-        yield return null;
         gameManager.laserTime = holdTime;
+        yield return null;
     }
 
     private void ShootWeapon()
@@ -259,6 +263,7 @@ public class WeaponShoot : MonoBehaviour
 
     private IEnumerator DisableHold()
     {
+        Debug.Log("timer started");
         yield return new WaitForSeconds(holdTime);
         loopSound.Stop();
         animator.SetBool("Shoot", false);
