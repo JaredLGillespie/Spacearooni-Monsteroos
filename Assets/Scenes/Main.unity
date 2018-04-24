@@ -539,6 +539,7 @@ MonoBehaviour:
   laser: {fileID: 540692051}
   machine: {fileID: 1454202757}
   rocket: {fileID: 1419308291}
+  musicPlayer: {fileID: 1917361791}
 --- !u!4 &75601937
 Transform:
   m_ObjectHideFlags: 0
