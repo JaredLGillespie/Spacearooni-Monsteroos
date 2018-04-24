@@ -254,7 +254,7 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator DisableHold()
     {
         yield return new WaitForSeconds(holdTime);
-        Debug.Log("disableHold");
+        loopSound.Stop();
         animator.SetBool("Shoot", false);
         holdTime = 0.0f;
         UseDefaultWeapon.Invoke();
