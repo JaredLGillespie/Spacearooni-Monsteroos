@@ -140,7 +140,7 @@ MonoBehaviour:
   MinimumGravitateDistance: Infinity
   RotateTowards: 1
   AlwaysSnapRotation: 0
-  RotateSpeed: 3
+  RotateSpeed: 6
   DistanceToSnapRotate: 0
 --- !u!114 &114488195664866282
 MonoBehaviour:
