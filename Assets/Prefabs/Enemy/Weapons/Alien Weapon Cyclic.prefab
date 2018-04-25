@@ -156,6 +156,7 @@ MonoBehaviour:
   BulletPositionOffset: {x: 0.45, y: 0}
   RateOfFire: 0.3
   InitialDelay: 3
+  ShootSound: {fileID: 8300000, guid: a0b43e9a93c2d594c81ad4b9f304ad21, type: 3}
 --- !u!212 &212526740649039938
 SpriteRenderer:
   m_ObjectHideFlags: 1
