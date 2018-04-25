@@ -66,13 +66,13 @@ public class BeamCastForward : MonoBehaviour
     private Vector2 GetBeamDirection()
     {
         if (Direction.ToLower().Equals("right"))
-            return Vector2.right;
+            return this.transform.right;
         else if (Direction.ToLower().Equals("left"))
-            return -Vector2.right;
+            return -this.transform.right;
         else if (Direction.ToLower().Equals("up"))
-            return Vector2.up;
+            return this.transform.up;
         else if (Direction.ToLower().Equals("down"))
-            return -Vector2.up;
+            return -this.transform.up;
         else
             throw new UnityException("Invalid beam direction given: " + Direction);
     }
