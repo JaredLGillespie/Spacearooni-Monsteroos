@@ -56,8 +56,10 @@ public class WeaponShoot : MonoBehaviour
         gameManager.rocket.SetActive(false);
         if (currentWeapon.Name == "pistol")
             gameManager.pistol.SetActive(true);
-        if (currentWeapon.Name == "laser")
+        if (currentWeapon.Name == "laser") { 
             gameManager.laser.SetActive(true);
+            gameManager.laserTimer.enabled = true;
+        }
         if (currentWeapon.Name == "machine")
             gameManager.machine.SetActive(true);
         if (currentWeapon.Name == "rocket")
@@ -113,7 +115,6 @@ public class WeaponShoot : MonoBehaviour
                         lastHeldTime = Time.fixedTime;
                         updateTimerCoroutine = UpdateTimer();
                         StartCoroutine(updateTimerCoroutine);
-
                         loopSound.clip = currentWeapon.shoot;
                         loopSound.loop = true;
                         disableHoldCoroutine = DisableHold();
@@ -283,6 +284,7 @@ public class WeaponShoot : MonoBehaviour
     private IEnumerator DisableHold()
     {
         yield return new WaitForSeconds(holdTime);
+        gameManager.laserTimer.enabled = false;
         loopSound.Stop();
         animator.SetBool("Shoot", false);
         holdTime = 0.0f;
