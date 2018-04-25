@@ -23,4 +23,9 @@ public class Enemy : MonoBehaviour {
             health.CurrentVal += 10;
         }
     }
+
+    public void Damage(float damage)
+    {
+        health.CurrentVal = Mathf.Max(0, health.CurrentVal - damage);
+    }
 }

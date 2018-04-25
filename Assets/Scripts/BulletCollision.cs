@@ -27,12 +27,11 @@ public class BulletCollision : MonoBehaviour
     {
         if (!collided)
         {
-            collided = true;
-
-            var go = collision.otherCollider.gameObject;
+            var go = collision.collider.gameObject;
 
             if (go.tag.Equals(DamageTag))
             {
+                collided = true;
                 // Why is this not C#7 ?????????
                 var comp = go.GetComponent<DamageObject>();
                 if (comp != null)

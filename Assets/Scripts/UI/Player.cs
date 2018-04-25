@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour {
     [SerializeField]
     private Stat health;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -30,5 +33,10 @@ public class Player : MonoBehaviour {
 
     public void fillHealth() {
         health.CurrentVal = 100;
+    }
+
+    public void Damage(float damage)
+    {
+        health.CurrentVal = Mathf.Max(0, health.CurrentVal - damage);
     }
 }

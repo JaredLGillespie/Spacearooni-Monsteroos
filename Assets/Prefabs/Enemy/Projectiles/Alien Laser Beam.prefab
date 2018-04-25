@@ -76,7 +76,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 768
   HitTag: Player
-  Damage: 5
+  Damage: 1
   Direction: right
   CastRadius: 0.1
 --- !u!114 &114702824783543432
