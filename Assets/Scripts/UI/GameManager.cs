@@ -78,12 +78,14 @@ public class GameManager : MonoBehaviour {
             inGameMenu.SetActive(!inGameMenu.activeSelf);
             if (!inGameMenu.activeSelf)
             {
+                AudioListener.pause = false;
                 musicPlayer.musicSource.UnPause();
                 Time.timeScale = 1;
 
             }
             else
             {
+                AudioListener.pause = true;
                 musicPlayer.musicSource.Pause();
                 Time.timeScale = 0;
             }
