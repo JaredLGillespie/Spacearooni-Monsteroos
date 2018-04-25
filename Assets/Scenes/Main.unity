@@ -815,7 +815,7 @@ MonoBehaviour:
     BulletPositionOffset: {x: 0.15, y: 0.01}
     BulletObject: {fileID: 1920111427724892, guid: 0a399ae0c6530ff439f7072b7f50a28c,
       type: 2}
-    shoot: {fileID: 8300000, guid: ba39be6df6231d34091d30fff2a5e7db, type: 3}
+    shoot: {fileID: 8300000, guid: 996aee92e7f75814db5972a2eb8f8799, type: 3}
   - Name: rocket
     NumberOfBullets: 5
     IsAutomatic: 0
