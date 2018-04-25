@@ -10,6 +10,7 @@ public class AlienWeaponGun : MonoBehaviour
     [SerializeField] private Vector2 BulletPositionOffset = Vector2.zero;
     [SerializeField] private float RateOfFire = 0.8f; // Interval between firing bullets
     [SerializeField] private float InitialDelay = 3.0f; // Delay between using weapon
+    [SerializeField] private AudioClip ShootSound; 
 
     private Animator animator;
     private AudioSource audioSource;
@@ -40,6 +41,8 @@ public class AlienWeaponGun : MonoBehaviour
     private void Shoot()
     {
         animator.SetTrigger("Attack");
+
+        audioSource.PlayOneShot(ShootSound, GetShootVolume());
 
         // Offset bullet position
         var position = this.transform.position;
@@ -84,5 +87,18 @@ public class AlienWeaponGun : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         canShoot = true;
+    }
+
+    private float GetShootVolume()
+    {
+        if (this.transform.parent != null)
+        {
+            var comp = this.transform.parent.gameObject.GetComponent<Enemy>();
+
+            if (comp != null)
+                return comp.GetVolume();
+        }
+
+        return 1.0f;
     }
 }

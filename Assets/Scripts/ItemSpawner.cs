@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(AudioSource))]
 public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] private Vector2 Offset; // Offset item above spawner
+    [SerializeField] private AudioClip PickupSound;
 
     private Animator animator;
+    private AudioSource audioSource;
     private bool active = false;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void SpawnItem(GameObject o)
@@ -44,5 +48,6 @@ public class ItemSpawner : MonoBehaviour
     {
         active = false;
         animator.SetBool("Active", false);
+        audioSource.PlayOneShot(PickupSound);
     }
 }

@@ -155,6 +155,7 @@ MonoBehaviour:
     type: 2}
   PositionOffset: {x: 0, y: -0.2}
   InitialDelay: 3
+  ShootSound: {fileID: 8300000, guid: daaf7ffae115d144194390a802dcc4c0, type: 3}
 --- !u!212 &212565720025287340
 SpriteRenderer:
   m_ObjectHideFlags: 1

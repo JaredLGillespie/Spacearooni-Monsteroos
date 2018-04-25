@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(AudioSource))]
 public class AlienWeaponLaser : MonoBehaviour
 {
     [SerializeField] GameObject LaserObject;
     [SerializeField] Vector2 PositionOffset;
     [SerializeField] private float InitialDelay = 3.0f;
+    [SerializeField] private AudioClip ShootSound;
 
     private Animator animator;
+    private AudioSource audioSource;
     private GameObject heldObject;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -24,6 +28,8 @@ public class AlienWeaponLaser : MonoBehaviour
 
     private void OnDestroy()
     {
+        audioSource.Stop();
+
         if (heldObject != null)
             Destroy(heldObject);
     }
@@ -33,6 +39,10 @@ public class AlienWeaponLaser : MonoBehaviour
         yield return new WaitForSeconds(InitialDelay);
 
         animator.SetBool("Attack", true);
+        audioSource.clip = ShootSound;
+        audioSource.volume = GetShootVolume();
+        audioSource.loop = true;
+        audioSource.Play();
 
         var position = this.transform.position;
 
@@ -71,5 +81,18 @@ public class AlienWeaponLaser : MonoBehaviour
 
         if (this.transform.parent != null)
             Physics2D.IgnoreCollision(heldObject.GetComponent<Collider2D>(), this.transform.parent.gameObject.GetComponent<Collider2D>());
+    }
+
+    private float GetShootVolume()
+    {
+        if (this.transform.parent != null)
+        {
+            var comp = this.transform.parent.gameObject.GetComponent<Enemy>();
+
+            if (comp != null)
+                return comp.GetVolume();
+        }
+
+        return 1.0f;
     }
 }
