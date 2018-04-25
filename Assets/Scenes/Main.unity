@@ -7395,8 +7395,10 @@ MonoBehaviour:
   musicClips:
   - {fileID: 8300000, guid: b253dde96e2b1984ea445b1fa3fb1e6a, type: 3}
   - {fileID: 8300000, guid: 228c0c97f6d755b458581f0c88a7c01a, type: 3}
+  - {fileID: 8300000, guid: 46c42fb60afa0964db8082fbe6a152a0, type: 3}
   - {fileID: 8300000, guid: 33523dbefd59f6348adc08d9fb1e8365, type: 3}
-  - {fileID: 8300000, guid: 33523dbefd59f6348adc08d9fb1e8365, type: 3}
+  - {fileID: 8300000, guid: 35c88b8fb9ef9cd4882995c248d12ded, type: 3}
+  - {fileID: 8300000, guid: 522103d437ae2f44e98cafbc1987c1fd, type: 3}
   musicSource: {fileID: 1917361792}
   musicSlider: {fileID: 1245203512}
   sfxSlider: {fileID: 1235880214}
