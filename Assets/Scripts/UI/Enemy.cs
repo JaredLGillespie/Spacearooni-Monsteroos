@@ -1,27 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Enemy : MonoBehaviour {
-    [SerializeField]
-    public Stat health;
-	// Use this for initialization
-	void Start () {
-	}
+[RequireComponent(typeof(Animator))]
+public class Enemy : MonoBehaviour
+{
+    [SerializeField] private Stat health;
+    [SerializeField] private UnityEvent OnDeath;
+    [SerializeField] public GameManager gameManager;
+
+    private float SoundVolume = 1.0f;
+
+    private Animator animator;
+    private bool isDead = false;
 
     private void Awake() {
+        animator = GetComponent<Animator>();
         health.Initialize();
     }
 
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            health.CurrentVal -= 10;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
+    public void Damage(float damage)
+    {
+        health.CurrentVal = Mathf.Max(0, health.CurrentVal - damage);
+
+        if (health.CurrentVal <= 0.01 && !isDead)
         {
-            health.CurrentVal += 10;
+            health.CurrentVal = 0;
+            isDead = true;
+            animator.SetBool("Dead", true);
+            gameManager.updateScore(0);
+            OnDeath.Invoke();
         }
+        
+    }
+
+    public void SetVolume(float value)
+    {
+        SoundVolume = value;
+    }
+
+    public float GetVolume()
+    {
+        return SoundVolume;
     }
 
     public Stat GetHealth()

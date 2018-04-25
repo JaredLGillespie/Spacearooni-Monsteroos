@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageTag: Enemy
-  Damage: 1
+  Damage: 100
   CollisionCreator: {fileID: 1568119745628184, guid: afbb111133c84cb4f866f9d4a4b2518f,
     type: 2}
 --- !u!114 &114715842096615890

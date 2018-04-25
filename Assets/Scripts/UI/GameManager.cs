@@ -9,21 +9,32 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     public GameObject optionsMenu;
     [SerializeField]
-    private Text ammoLabel;
+    public Text ammoLabel;
     public int bulletCount=0;
     public float laserTime = 0.0f;
     [SerializeField] public Text laserTimer;
+    [SerializeField] public Text totalScore;
     [SerializeField] public GameObject pistol;
     [SerializeField] public GameObject laser;
     [SerializeField] public GameObject machine;
     [SerializeField] public GameObject rocket;
     [SerializeField]
     public MusicPlayer musicPlayer;
+    private static int playerScore=0;
+    private static int enemyScore=0;
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";
+        totalScore.text = "you: " + playerScore + " enemy: " + enemyScore;
     }
 
+    public void updateScore(int who) {
+        if (who == 0)
+            playerScore++;
+        else
+            enemyScore++;
+        totalScore.text = "you: " + playerScore + " enemy: " + enemyScore;
+    }
     // Update is called once per frame
     void Update() {
         HandleEsc();
