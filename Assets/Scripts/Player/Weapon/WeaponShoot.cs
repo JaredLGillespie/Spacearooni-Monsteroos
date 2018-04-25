@@ -54,9 +54,12 @@ public class WeaponShoot : MonoBehaviour
         gameManager.laser.SetActive(false);
         gameManager.machine.SetActive(false);
         gameManager.rocket.SetActive(false);
+        gameManager.laserTimer.enabled = false;
+        gameManager.ammoLabel.enabled = true;
         if (currentWeapon.Name == "pistol")
             gameManager.pistol.SetActive(true);
-        if (currentWeapon.Name == "laser") { 
+        if (currentWeapon.Name == "laser") {
+            gameManager.ammoLabel.enabled = false;
             gameManager.laser.SetActive(true);
             gameManager.laserTimer.enabled = true;
         }
