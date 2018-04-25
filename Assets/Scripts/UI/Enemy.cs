@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Stat health;
     [SerializeField] private UnityEvent OnDeath;
 
+    private float SoundVolume = 1.0f;
+
     private Animator animator;
     private bool isDead = false;
 
@@ -29,5 +31,15 @@ public class Enemy : MonoBehaviour
             OnDeath.Invoke();
         }
         
+    }
+
+    public void SetVolume(float value)
+    {
+        SoundVolume = value;
+    }
+
+    public float GetVolume()
+    {
+        return SoundVolume;
     }
 }
