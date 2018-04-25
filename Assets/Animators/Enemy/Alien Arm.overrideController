@@ -6,9 +6,9 @@ AnimatorOverrideController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Alien Arm
-  m_Controller: {fileID: 9100000, guid: e80de96c66f101343adaf92b98ff1219, type: 2}
+  m_Controller: {fileID: 9100000, guid: a8d86b895523f6145830fbda79bc7cab, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 388139e4ce0a5124c8492690861fb7f6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 34625eca7c867c14d8b83da941d1f2da, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: a3e6a46e3853a9845acb3d4dab0ab735, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 691f29a3a0bb0eb47ba714e7bd0fe826, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f9a6dda1c7fe70c42bc954c1c7d5ec9a, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 5d04537234998514db78d7c4a3b12d5a, type: 2}
