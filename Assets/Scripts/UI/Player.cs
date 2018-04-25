@@ -4,27 +4,17 @@ using UnityEngine;
 using System;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Animator))]
 public class Player : MonoBehaviour {
-    [SerializeField]
-    private Stat health;
+    [SerializeField] private Stat health;
+    [SerializeField] private UnityEvent OnDeath; // Perform something on death
 
-	// Use this for initialization
-	void Start () {
-	}
+    private Animator animator;
+    private bool isDead = false;
 
     private void Awake() {
+        animator = GetComponent<Animator>();
         health.Initialize();
-    }
-
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            health.CurrentVal -= 10;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            health.CurrentVal += 10;
-        }
     }
 
     public void pickUpHealth() {
@@ -38,5 +28,13 @@ public class Player : MonoBehaviour {
     public void Damage(float damage)
     {
         health.CurrentVal = Mathf.Max(0, health.CurrentVal - damage);
+
+        if (health.CurrentVal <= 0.01 && !isDead)
+        {
+            health.CurrentVal = 0;
+            isDead = true;
+            animator.SetBool("Dead", true);
+            OnDeath.Invoke();
+        }
     }
 }

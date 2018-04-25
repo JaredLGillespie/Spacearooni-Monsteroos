@@ -1,31 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Enemy : MonoBehaviour {
-    [SerializeField]
-    private Stat health;
-	// Use this for initialization
-	void Start () {
-	}
+[RequireComponent(typeof(Animator))]
+public class Enemy : MonoBehaviour
+{
+    [SerializeField] private Stat health;
+    [SerializeField] private UnityEvent OnDeath;
+
+    private Animator animator;
+    private bool isDead = false;
 
     private void Awake() {
+        animator = GetComponent<Animator>();
         health.Initialize();
-    }
-
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            health.CurrentVal -= 10;
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            health.CurrentVal += 10;
-        }
     }
 
     public void Damage(float damage)
     {
         health.CurrentVal = Mathf.Max(0, health.CurrentVal - damage);
+
+        if (health.CurrentVal <= 0.01 && !isDead)
+        {
+            health.CurrentVal = 0;
+            isDead = true;
+            animator.SetBool("Dead", true);
+            OnDeath.Invoke();
+        }
+        
     }
 }

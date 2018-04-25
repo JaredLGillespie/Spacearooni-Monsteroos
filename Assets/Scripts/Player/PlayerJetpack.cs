@@ -25,6 +25,8 @@ public class PlayerJetpack : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (animator.GetBool("Dead")) return;
+
         // Check if we're colliding with ground
         grounded = IsGrounded();
 
