@@ -19,6 +19,8 @@ public class AlienMovement : MonoBehaviour {
     void Update() {
         RaycastHit2D hit = Physics2D.Raycast(target.transform.position, player.transform.position - target.transform.position);
 
+        if (hit == null) return;
+
         if (hit.transform.gameObject != player || Vector2.Distance(transform.position, player.transform.position) > 4)
         {
 

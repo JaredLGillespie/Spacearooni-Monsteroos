@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour {
     public MusicPlayer musicPlayer;
     private static int playerScore=0;
     private static int enemyScore=0;
-    [SerializeField] private AudioClip loseSound;
-    [SerializeField] private AudioClip winSound;
+    [SerializeField] public AudioClip loseSound;
+    [SerializeField] public AudioClip winSound;
 
     private AudioSource audioSource;
 
@@ -42,12 +42,14 @@ public class GameManager : MonoBehaviour {
     public void updateScore(int who) {
         if (who == 0)
         {
-            audioSource.PlayOneShot(winSound);
+            if (winSound == null)
+                audioSource.PlayOneShot(winSound);
             playerScore++;
         }
         else
         {
-            audioSource.PlayOneShot(loseSound);
+            if (loseSound == null)
+                audioSource.PlayOneShot(loseSound);
             enemyScore++;
         }
         totalScore.text = "you: " + playerScore + " enemy: " + enemyScore;
