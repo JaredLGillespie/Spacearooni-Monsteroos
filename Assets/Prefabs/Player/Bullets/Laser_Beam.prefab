@@ -58,7 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1536
   EnemyTag: Enemy
-  Damage: 5
+  Damage: 0.2
   CastRadius: 0.1
 --- !u!114 &114203428342349564
 MonoBehaviour:

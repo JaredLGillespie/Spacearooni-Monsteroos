@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb13355537ab50843b91e62226dde310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyTag: Enemy
-  Damage: 10
+  DamageTag: Enemy
+  Damage: 1.5
   CollisionCreator: {fileID: 1041269292347558, guid: 8d559bd3a49230c47a695ed169dbf2a2,
     type: 2}
 --- !u!114 &114537108523849314
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb13355537ab50843b91e62226dde310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyTag: Enemy
+  DamageTag: Enemy
   Damage: 10
   CollisionCreator: {fileID: 0}
 --- !u!212 &212701014307746140

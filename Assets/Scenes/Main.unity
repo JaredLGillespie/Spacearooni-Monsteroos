@@ -4829,6 +4829,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &1235092753 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1761376391985638, guid: 008d05d0942a8a74388eb0340721b402,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799716760}
+--- !u!61 &1235092764
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235092753}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: 0.12}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.48, y: 0.4}
+    oldSize: {x: 0.5, y: 0.8}
+    newSize: {x: 0.5, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47, y: 0.65}
+  m_EdgeRadius: 0
 --- !u!1 &1235880212
 GameObject:
   m_ObjectHideFlags: 0
@@ -8626,7 +8656,7 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 566691260}
+      objectReference: {fileID: 1140895528}
     - target: {fileID: 114687072426600196, guid: 008d05d0942a8a74388eb0340721b402,
         type: 2}
       propertyPath: player
@@ -8648,13 +8678,13 @@ Prefab:
         type: 2}
       propertyPath: alienWeaponCyclic
       value: 
-      objectReference: {fileID: 1937842763741236, guid: 89a7189c69ec5374e877fdf96031c544,
+      objectReference: {fileID: 1227645389010888, guid: 0efb6adb771f8164482f1927ba6de521,
         type: 2}
     - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
         type: 2}
       propertyPath: alienWeaponDiskSmall
       value: 
-      objectReference: {fileID: 1513664907111598, guid: fb081c78a582df44188a4979f4b3065d,
+      objectReference: {fileID: 1258710264828616, guid: bad76cab308f91548acb9eac3a8c2c72,
         type: 2}
     - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
         type: 2}
@@ -8683,7 +8713,22 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1457214236}
+      objectReference: {fileID: 1140895527}
+    - target: {fileID: 114526918799378368, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: health.bar
+      value: 
+      objectReference: {fileID: 188414314}
+    - target: {fileID: 114526918799378368, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 75601936}
+    - target: {fileID: 114786019041732474, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: speed
+      value: 1.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 008d05d0942a8a74388eb0340721b402, type: 2}
   m_IsPrefabParent: 0
