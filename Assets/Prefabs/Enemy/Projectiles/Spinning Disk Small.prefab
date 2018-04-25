@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114674083101014268}
   - component: {fileID: 114442500484498364}
   - component: {fileID: 114122885755716896}
+  - component: {fileID: 114940126721898568}
   m_Layer: 10
   m_Name: Spinning Disk Small
   m_TagString: Untagged
@@ -179,6 +180,22 @@ MonoBehaviour:
   MaxSpeed: 7
   UseSpeedDiff: 0
   BreakSpeed: 5
+--- !u!114 &114940126721898568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513664907111598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec85e7ae5b9670d47b2522fbe4a54cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageTag: Player
+  Damage: 1
+  DamageRadius: 0.15
+  ScaleDamage: 0
+  DestroyOnStart: 0
 --- !u!212 &212059604354997790
 SpriteRenderer:
   m_ObjectHideFlags: 1
