@@ -714,6 +714,8 @@ MonoBehaviour:
   machine: {fileID: 1454202757}
   rocket: {fileID: 1419308291}
   musicPlayer: {fileID: 1917361791}
+  loseSound: {fileID: 8300000, guid: da8a44f87a655d54587ea89f31892d7a, type: 3}
+  winSound: {fileID: 8300000, guid: d593732ec52568140b1129c331fcb8d5, type: 3}
 --- !u!4 &75601937
 Transform:
   m_ObjectHideFlags: 0
@@ -4834,6 +4836,86 @@ GameObject:
   m_PrefabParentObject: {fileID: 1761376391985638, guid: 008d05d0942a8a74388eb0340721b402,
     type: 2}
   m_PrefabInternal: {fileID: 1799716760}
+--- !u!82 &1235092754
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235092753}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!61 &1235092764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8476,6 +8558,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: AlienSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 114337177228461366, guid: 008d05d0942a8a74388eb0340721b402,
         type: 2}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
@@ -8759,6 +8846,21 @@ Prefab:
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: AlienSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: aac0da18cc66fce44987af7b13cf8fb9, type: 3}
+    - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: AlienSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c07f5073cca432448b384b279e524f2e, type: 3}
+    - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
+        type: 2}
+      propertyPath: AlienSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ea50479450eab4489529c141d22c91e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 008d05d0942a8a74388eb0340721b402, type: 2}
   m_IsPrefabParent: 0

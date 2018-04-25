@@ -193,9 +193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageTag: Player
   Damage: 1
-  DamageRadius: 0.15
+  DamageRadius: 0.3
   ScaleDamage: 0
   DestroyOnStart: 0
+  Continuous: 1
+  DamageInterval: 0.1
 --- !u!212 &212059604354997790
 SpriteRenderer:
   m_ObjectHideFlags: 1

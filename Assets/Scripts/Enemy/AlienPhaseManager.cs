@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlienPhaseManager : MonoBehaviour {
+[RequireComponent(typeof(AudioSource))]
+public class AlienPhaseManager : MonoBehaviour
+{
     [SerializeField] private GameObject alienWeaponBlaster;
     [SerializeField] private GameObject alienWeaponCannon;
     [SerializeField] private GameObject alienWeaponCyclic;
@@ -10,15 +12,18 @@ public class AlienPhaseManager : MonoBehaviour {
     [SerializeField] private GameObject alienWeaponDisk;
     [SerializeField] private GameObject alienWeaponLaser;
     [SerializeField] private GameObject alienWeaponRocket;
+    [SerializeField] private List<AudioClip> AlienSounds;
 
     public GameObject player;
 
     private GameObject[] weapons = new GameObject[4];
     private int currentPhase;
     Enemy enemyProperties;
+    private AudioSource audioSource;
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         enemyProperties = GetComponent<Enemy>();
     }
     // Use this for initialization
@@ -146,6 +151,9 @@ public class AlienPhaseManager : MonoBehaviour {
 
     private void setWeapons(GameObject w1, GameObject w2, GameObject w3, GameObject w4)
     {
+        var randClip = Random.Range(0, AlienSounds.Count);
+        audioSource.PlayOneShot(AlienSounds[randClip]);
+
         for(int i = 0; i < 4; i++)
         {
             if(weapons[i] != null)

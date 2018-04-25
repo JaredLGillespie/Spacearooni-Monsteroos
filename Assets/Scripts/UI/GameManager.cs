@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class GameManager : MonoBehaviour {
     [SerializeField]
     public GameObject inGameMenu;
@@ -22,6 +23,16 @@ public class GameManager : MonoBehaviour {
     public MusicPlayer musicPlayer;
     private static int playerScore=0;
     private static int enemyScore=0;
+    [SerializeField] private AudioClip loseSound;
+    [SerializeField] private AudioClip winSound;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Use this for initialization
     void Start() {
         ammoLabel.text = "";
@@ -30,9 +41,15 @@ public class GameManager : MonoBehaviour {
 
     public void updateScore(int who) {
         if (who == 0)
+        {
+            audioSource.PlayOneShot(winSound);
             playerScore++;
+        }
         else
+        {
+            audioSource.PlayOneShot(loseSound);
             enemyScore++;
+        }
         totalScore.text = "you: " + playerScore + " enemy: " + enemyScore;
     }
     // Update is called once per frame
