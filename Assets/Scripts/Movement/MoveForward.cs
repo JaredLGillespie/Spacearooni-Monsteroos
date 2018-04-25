@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveForward : MonoBehaviour
 {
-    [SerializeField] private float Speed = 1.0f;
+    [SerializeField] public float Speed = 1.0f;
     [SerializeField] private string Direction = "right"; // right, left, down, up
 
     private new Rigidbody2D rigidbody2D;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     [SerializeField]
-    private Stat health;
+    public Stat health;
 	// Use this for initialization
 	void Start () {
 	}
@@ -22,5 +22,10 @@ public class Enemy : MonoBehaviour {
         {
             health.CurrentVal += 10;
         }
+    }
+
+    public Stat GetHealth()
+    {
+        return health;
     }
 }

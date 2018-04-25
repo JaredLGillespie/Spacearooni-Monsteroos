@@ -6,10 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AlienWeaponGun : MonoBehaviour
 {
-    [SerializeField] private GameObject BulletObject;
+    [SerializeField] public GameObject BulletObject;
     [SerializeField] private Vector2 BulletPositionOffset = Vector2.zero;
-    [SerializeField] private float RateOfFire = 0.8f; // Interval between firing bullets
-    [SerializeField] private float InitialDelay = 3.0f; // Delay between using weapon
+    [SerializeField] public float RateOfFire = 0.8f; // Interval between firing bullets
+    [SerializeField] public float InitialDelay = 3.0f; // Delay between using weapon
 
     private Animator animator;
     private AudioSource audioSource;
