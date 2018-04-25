@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private Stat health;
     [SerializeField] private UnityEvent OnDeath;
+    [SerializeField] public GameManager gameManager;
 
     private Animator animator;
     private bool isDead = false;
@@ -26,6 +27,7 @@ public class Enemy : MonoBehaviour
             health.CurrentVal = 0;
             isDead = true;
             animator.SetBool("Dead", true);
+            gameManager.updateScore(0);
             OnDeath.Invoke();
         }
         
