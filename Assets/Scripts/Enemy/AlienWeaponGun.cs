@@ -8,14 +8,10 @@ public class AlienWeaponGun : MonoBehaviour
 {
     [SerializeField] public GameObject BulletObject;
     [SerializeField] private Vector2 BulletPositionOffset = Vector2.zero;
-<<<<<<< HEAD
-    [SerializeField] private float RateOfFire = 0.8f; // Interval between firing bullets
-    [SerializeField] private float InitialDelay = 3.0f; // Delay between using weapon
-    [SerializeField] private AudioClip ShootSound; 
-=======
+
     [SerializeField] public float RateOfFire = 0.8f; // Interval between firing bullets
     [SerializeField] public float InitialDelay = 3.0f; // Delay between using weapon
->>>>>>> b18fb64c859ad0d3f3cd07e12f9a2440c3c7a8e8
+    [SerializeField] private AudioClip ShootSound; 
 
     private Animator animator;
     private AudioSource audioSource;
