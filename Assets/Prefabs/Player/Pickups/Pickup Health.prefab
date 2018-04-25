@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4642583760933750}
   - component: {fileID: 212666131454993076}
   - component: {fileID: 95230743671431240}
+  - component: {fileID: 114218808208507512}
   m_Layer: 2
   m_Name: Pickup Health
   m_TagString: Health
@@ -58,6 +59,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114218808208507512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567027994956304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5259c9698264641be488cd2dac597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212666131454993076
 SpriteRenderer:
   m_ObjectHideFlags: 1

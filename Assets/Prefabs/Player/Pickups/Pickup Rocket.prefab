@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212775853687777984}
   - component: {fileID: 95777585483094808}
   - component: {fileID: 114413226712595760}
+  - component: {fileID: 114838196800520860}
   m_Layer: 2
   m_Name: Pickup Rocket
   m_TagString: Weapon
@@ -71,6 +72,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: rocket
+--- !u!114 &114838196800520860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1167086101460012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5259c9698264641be488cd2dac597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212775853687777984
 SpriteRenderer:
   m_ObjectHideFlags: 1

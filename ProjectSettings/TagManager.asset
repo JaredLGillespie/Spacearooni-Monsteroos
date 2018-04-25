@@ -8,6 +8,8 @@ TagManager:
   - Weapon
   - Health
   - Enemy
+  - Skin
+  - Spawner
   layers:
   - Default
   - TransparentFX

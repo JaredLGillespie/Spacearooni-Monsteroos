@@ -6,7 +6,7 @@ public class ImpactCreator : MonoBehaviour
 {
     [SerializeField] private GameObject ImpactObject; // Object to create on impact
     [SerializeField] private int NumberOfImpactObjects = 1; // Number of impact objects to create
-    [SerializeField] private float ImpactObjectSpread = 0.0f; // Spread of impact objects (objects created within this radius of collision)
+    [SerializeField] private Vector2 ImpactObjectSpread = Vector2.zero; // Spread of impact objects
     [SerializeField] private float DelayBetweenImpact = 0.0f; // Delay between impact object creations
     [SerializeField] private bool StartImmediately = true; // Whether to start immediately
     [SerializeField] private bool DestroyWhenComplete = true; // Whether to destroy this when done
@@ -28,7 +28,7 @@ public class ImpactCreator : MonoBehaviour
 
         if (numRemainingImpacts > 0)
         {
-            var pos = position + new Vector3(Random.Range(-ImpactObjectSpread, ImpactObjectSpread), Random.Range(-ImpactObjectSpread, ImpactObjectSpread), 0).normalized * ImpactObjectSpread;
+            var pos = position + new Vector3(Random.Range(-ImpactObjectSpread.x, ImpactObjectSpread.x), Random.Range(-ImpactObjectSpread.y, ImpactObjectSpread.y), 0);
             var impact = Instantiate(ImpactObject, pos, this.transform.rotation);
             numRemainingImpacts--;
         }
@@ -38,7 +38,7 @@ public class ImpactCreator : MonoBehaviour
 
         while (numRemainingImpacts > 0)
         {
-            var pos = position + new Vector3(Random.Range(-ImpactObjectSpread, ImpactObjectSpread), Random.Range(-ImpactObjectSpread, ImpactObjectSpread), 0).normalized * ImpactObjectSpread;
+            var pos = position + new Vector3(Random.Range(-ImpactObjectSpread.x, ImpactObjectSpread.x), Random.Range(-ImpactObjectSpread.y, ImpactObjectSpread.y), 0);
             var impact = Instantiate(ImpactObject, pos, this.transform.rotation);
             numRemainingImpacts--;
 

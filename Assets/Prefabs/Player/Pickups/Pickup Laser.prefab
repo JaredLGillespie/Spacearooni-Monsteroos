@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212452149949798164}
   - component: {fileID: 95942665769012188}
   - component: {fileID: 114009329787777264}
+  - component: {fileID: 114042423185923588}
   m_Layer: 2
   m_Name: Pickup Laser
   m_TagString: Weapon
@@ -71,6 +72,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: laser
+--- !u!114 &114042423185923588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1364040282658864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5259c9698264641be488cd2dac597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212452149949798164
 SpriteRenderer:
   m_ObjectHideFlags: 1

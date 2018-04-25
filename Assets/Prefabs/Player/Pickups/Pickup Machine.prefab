@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212189512703010086}
   - component: {fileID: 95844857726972734}
   - component: {fileID: 114349902234691448}
+  - component: {fileID: 114547511986211872}
   m_Layer: 2
   m_Name: Pickup Machine
   m_TagString: Weapon
@@ -71,6 +72,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponName: machine
+--- !u!114 &114547511986211872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837473073219076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5259c9698264641be488cd2dac597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivation:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!212 &212189512703010086
 SpriteRenderer:
   m_ObjectHideFlags: 1
