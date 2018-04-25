@@ -44,4 +44,9 @@ public class Enemy : MonoBehaviour
     {
         return SoundVolume;
     }
+
+    public Stat GetHealth()
+    {
+        return health;
+    }
 }
