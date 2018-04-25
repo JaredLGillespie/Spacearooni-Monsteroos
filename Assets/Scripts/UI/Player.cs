@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour {
     [SerializeField] private Stat health;
     [SerializeField] private UnityEvent OnDeath; // Perform something on death
-
+    [SerializeField] public GameManager gameManager;
     private Animator animator;
     private bool isDead = false;
 
@@ -34,6 +34,7 @@ public class Player : MonoBehaviour {
             health.CurrentVal = 0;
             isDead = true;
             animator.SetBool("Dead", true);
+            gameManager.updateScore(1);
             OnDeath.Invoke();
         }
     }
