@@ -9,6 +9,7 @@ TagManager:
   - Health
   - Enemy
   - Skin
+  - Spawner
   layers:
   - Default
   - TransparentFX
