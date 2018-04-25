@@ -20,6 +20,7 @@ public class PlayerSwitch : MonoBehaviour
     public Text healthTimer;
     [SerializeField] Player player; 
     private Animator animator;
+    private bool usingPowerUp = false;
 
     private void Awake()
     {
@@ -41,12 +42,19 @@ public class PlayerSwitch : MonoBehaviour
 
     public void UseAlt()
     {
-        // Any resource has to be defined in Assets/Resources to be loaded at runtime
-        animator.runtimeAnimatorController = Resources.Load(AltResourcePath, typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
+        if (!usingPowerUp)
+        {
+            // Any resource has to be defined in Assets/Resources to be loaded at runtime
+            animator.runtimeAnimatorController = Resources.Load(AltResourcePath, typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
 
-        SwitchPlayer.Invoke(name);
-        player.fillHealth();
-        StartCoroutine(PowerUp());
+            SwitchPlayer.Invoke(name);
+            player.fillHealth();
+            StartCoroutine(PowerUp());
+        }
+        else
+        {
+            infiniteHealthTime = 10f;
+        }
     }
 
     public IEnumerator PowerUp()

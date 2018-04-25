@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3fd85d964d85764392485dffbeaca0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletObject: {fileID: 1534651679850208, guid: a797a39776a38a049a892b8b5f68bb5b,
+  BulletObject: {fileID: 1513664907111598, guid: fb081c78a582df44188a4979f4b3065d,
     type: 2}
   BulletPositionOffset: {x: 0.2, y: 0}
   RateOfFire: 3

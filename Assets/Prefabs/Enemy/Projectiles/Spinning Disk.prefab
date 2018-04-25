@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageTag: Player
-  Damage: 1
+  Damage: 0.5
   DamageRadius: 0.4
   ScaleDamage: 0
   DestroyOnStart: 0

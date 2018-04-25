@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageTag: Enemy
-  Damage: 10
+  Damage: 5
   CollisionCreator: {fileID: 0}
 --- !u!212 &212701014307746140
 SpriteRenderer:

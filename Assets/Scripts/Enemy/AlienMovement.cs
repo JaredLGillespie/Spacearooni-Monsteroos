@@ -38,6 +38,8 @@ public class AlienMovement : MonoBehaviour {
                 //check to see if the player is within the line of sight of this new target point
                 hit = Physics2D.Raycast(targetPosition, player.transform.position - target.transform.position);
 
+                if (hit == null) continue;
+
                 if (hit.transform.gameObject == player && Vector2.Distance(targetPosition, player.transform.position) > 2)
                 {
                     break;

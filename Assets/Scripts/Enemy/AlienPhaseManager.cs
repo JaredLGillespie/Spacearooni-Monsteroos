@@ -36,96 +36,103 @@ public class AlienPhaseManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
         //check health and switch to phases based on health
-        int health = (int)System.Math.Floor(enemyProperties.GetHealth().CurrentVal);
-        switch (health)
+        var health = enemyProperties.GetHealth().CurrentVal;
+
+        if (health <= 5)
         {
-            case 90:
-                if(currentPhase != 2)
+            if (currentPhase != 11)
+            {
+                currentPhase = 11;
+                //change weapons/params
+                setWeapons(alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic);
+                for (int i = 0; i < 4; i++)
                 {
-                    currentPhase = 2;
-                    //change weapons/params
-                    setWeapons(alienWeaponCannon, alienWeaponCyclic, alienWeaponCannon, alienWeaponCyclic);
+                    weapons[i].GetComponent<AlienWeaponGun>().RateOfFire = 0.1f;
+                    weapons[i].GetComponent<AlienWeaponGun>().BulletObject.GetComponent<MoveForward>().Speed = 5.0f;
                 }
-                break;
-            case 80:
-                if (currentPhase != 3)
-                {
-                    currentPhase = 3;
-                    //change weapons/params
-                    setWeapons(alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic);
-                }
-                break;
-            case 70:
-                if (currentPhase != 4)
-                {
-                    currentPhase = 4;
-                    //change weapons/params
-                    setWeapons(alienWeaponDisk, alienWeaponCyclic, alienWeaponDisk, alienWeaponCyclic);
-                }
-                break;
-            case 60:
-                if (currentPhase != 5)
-                {
-                    currentPhase = 5;
-                    //change weapons/params
-                    setWeapons(alienWeaponRocket, alienWeaponRocket, alienWeaponRocket, alienWeaponRocket);
-                }
-                break;
-            case 50:
-                if (currentPhase != 6)
-                {
-                    currentPhase = 6;
-                    //change weapons/params
-                    setWeapons(alienWeaponDiskSmall, alienWeaponDisk, alienWeaponDiskSmall, alienWeaponDisk);
-                }
-                break;
-            case 40:
-                if (currentPhase != 7)
-                {
-                    currentPhase = 7;
-                    //change weapons/params
-                    setWeapons(alienWeaponLaser, alienWeaponDisk, alienWeaponLaser, alienWeaponDisk);
-                }
-                break;
-            case 30:
-                if (currentPhase != 8)
-                {
-                    currentPhase = 8;
-                    //change weapons/params
-                    setWeapons(alienWeaponCyclic, alienWeaponLaser, alienWeaponLaser, alienWeaponLaser);
-                }
-                break;
-            case 20:
-                if (currentPhase != 9)
-                {
-                    currentPhase = 9;
-                    //change weapons/params
-                    setWeapons(alienWeaponDisk, alienWeaponLaser, alienWeaponDiskSmall, alienWeaponLaser);
-                }
-                break;
-            case 10:
-                if (currentPhase != 10)
-                {
-                    currentPhase = 10;
-                    //change weapons/params
-                    setWeapons(alienWeaponDisk, alienWeaponLaser, alienWeaponCyclic, alienWeaponRocket);
-                }
-                break;
-            case 5:
-                if (currentPhase != 11)
-                {
-                    currentPhase = 11;
-                    //change weapons/params
-                    setWeapons(alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic);
-                    for (int i = 0; i < 4; i++)
-                    {
-                        weapons[i].GetComponent<AlienWeaponGun>().RateOfFire = 0.1f;
-                        weapons[i].GetComponent<AlienWeaponGun>().BulletObject.GetComponent<MoveForward>().Speed = 5.0f;
-                    }
-                }
-                break;
+            }
         }
-        
+        else if (health <= 10)
+        {
+            if (currentPhase != 10)
+            {
+                currentPhase = 10;
+                //change weapons/params
+                setWeapons(alienWeaponDisk, alienWeaponLaser, alienWeaponCyclic, alienWeaponRocket);
+            }
+        }
+        else if (health <= 20)
+        {
+            if (currentPhase != 9)
+            {
+                currentPhase = 9;
+                //change weapons/params
+                setWeapons(alienWeaponDisk, alienWeaponLaser, alienWeaponDiskSmall, alienWeaponLaser);
+            }
+        }
+        else if (health <= 30)
+        {
+            if (currentPhase != 8)
+            {
+                currentPhase = 8;
+                //change weapons/params
+                setWeapons(alienWeaponCyclic, alienWeaponLaser, alienWeaponLaser, alienWeaponLaser);
+            }
+        }
+        else if (health <= 40)
+        {
+            if (currentPhase != 7)
+            {
+                currentPhase = 7;
+                //change weapons/params
+                setWeapons(alienWeaponLaser, alienWeaponDisk, alienWeaponLaser, alienWeaponDisk);
+            }
+        }
+        else if (health <= 50)
+        {
+            if (currentPhase != 6)
+            {
+                currentPhase = 6;
+                //change weapons/params
+                setWeapons(alienWeaponDiskSmall, alienWeaponDisk, alienWeaponDiskSmall, alienWeaponDisk);
+            }
+        }
+        else if (health <= 60)
+        {
+            if (currentPhase != 5)
+            {
+                currentPhase = 5;
+                //change weapons/params
+                setWeapons(alienWeaponRocket, alienWeaponRocket, alienWeaponRocket, alienWeaponRocket);
+            }
+        }
+        else if (health <= 70)
+        {
+            if (currentPhase != 4)
+            {
+                currentPhase = 4;
+                //change weapons/params
+                setWeapons(alienWeaponDisk, alienWeaponCyclic, alienWeaponDisk, alienWeaponCyclic);
+            }
+        }
+        else if (health <= 80)
+        {
+            if (currentPhase != 3)
+            {
+                currentPhase = 3;
+                //change weapons/params
+                setWeapons(alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic, alienWeaponCyclic);
+            }
+        }
+        else if (health <= 90)
+        {
+            if (currentPhase != 2)
+            {
+                currentPhase = 2;
+                //change weapons/params
+                setWeapons(alienWeaponCannon, alienWeaponCyclic, alienWeaponCannon, alienWeaponCyclic);
+            }
+        }     
 
         //update rotation of weapons to be towards player
         for(int i = 0; i < 4; i++)

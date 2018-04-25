@@ -749,9 +749,9 @@ MonoBehaviour:
     Prob: 1
   - Item: {fileID: 1364040282658864, guid: cb070e1175007494ebf68c8b0caedc98, type: 2}
     Prob: 1
-  - Item: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
-    Prob: 1
   - Item: {fileID: 1251420013059998, guid: 55d0775a37abc1641ae0ba05a4fc52ba, type: 2}
+    Prob: 0
+  - Item: {fileID: 1567027994956304, guid: 9bc78c2efa2b40c44a5144010d86bae2, type: 2}
     Prob: 1
 --- !u!1 &110290034
 GameObject:
@@ -840,7 +840,7 @@ MonoBehaviour:
     NumberOfBullets: 0
     IsAutomatic: 0
     IsHold: 1
-    HoldTime: 20
+    HoldTime: 10
     RateOfFire: 0
     BulletPositionOffset: {x: 0.15, y: 0.02}
     BulletObject: {fileID: 1087243722030674, guid: dd82550a0f083804db9938542a210a27,
@@ -4693,6 +4693,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 212431927134241228, guid: eff2ac11e3aad5442a2a88014d3fd0f1,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eff2ac11e3aad5442a2a88014d3fd0f1, type: 2}
   m_IsPrefabParent: 0
@@ -4916,6 +4921,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1235092755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235092753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec85e7ae5b9670d47b2522fbe4a54cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DamageTag: Player
+  Damage: 1
+  DamageRadius: 0.7
+  ScaleDamage: 1
+  DestroyOnStart: 0
+  Continuous: 1
+  DamageInterval: 0.1
 --- !u!61 &1235092764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6512,7 +6535,6 @@ MonoBehaviour:
   AirControl: 1
   GroundTag: Ground
   GroundProximity: 0.03
-  EnableJump: 0
 --- !u!114 &1457214241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8782,7 +8804,7 @@ Prefab:
         type: 2}
       propertyPath: alienWeaponDisk
       value: 
-      objectReference: {fileID: 1534651679850208, guid: a797a39776a38a049a892b8b5f68bb5b,
+      objectReference: {fileID: 1662380227833472, guid: b7da80b3622266e4480ea8494d06ec39,
         type: 2}
     - target: {fileID: 114387452595863144, guid: 008d05d0942a8a74388eb0340721b402,
         type: 2}
