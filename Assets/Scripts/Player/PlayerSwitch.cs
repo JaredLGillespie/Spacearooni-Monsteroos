@@ -61,6 +61,7 @@ public class PlayerSwitch : MonoBehaviour
             infiniteHealthTime -= 1f;
         }
         healthTimer.enabled = false;
+        infiniteHealthTime = 10f;
         StopCoroutine(healthSuit);
         healthSuit = null;
         UseDefault();
