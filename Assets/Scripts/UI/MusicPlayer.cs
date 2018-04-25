@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -67,14 +68,12 @@ public class MusicQueue {
     }
 
     public List<AudioClip> RandomizeList(List <AudioClip> list) {
-        List<AudioClip> copy = new List<AudioClip>(list);
-        int n = copy.Count;
-        while (n > 1) {
-            n--;
-            int k = Random.Range(0, n + 1);
-            AudioClip value = copy[k];
-            copy[k] = copy[n];
-            copy[n] = value;
+        List<AudioClip> copy = new List<AudioClip>();
+        UnityEngine.Random.InitState(Convert.ToInt32(Time.fixedTime));
+        while (list.Count > 0){
+            int k = UnityEngine.Random.Range(0, list.Count);
+            copy.Add(list[k]);
+            list.Remove(list[k]);
         }
         return copy;
     }
